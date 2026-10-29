@@ -1,0 +1,57 @@
+/* Kirill Potemkin — personal site
+   Type: Michelangelus (display + text), IBM Plex Mono (annotations)
+   Palette: paper #FBFBF9 · ink #121212 · muted #6B6B66 · rule #E3E2DD · signal #2B39D9 */
+
+@font-face {
+  font-family: "Michelangelus";
+  src: url("../fonts/Michelangelus-Regular.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Michelangelus";
+  src: url("../fonts/Michelangelus-Italic.woff2") format("woff2");
+  font-weight: 400; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: "Michelangelus";
+  src: url("../fonts/Michelangelus-Bold.woff2") format("woff2");
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Michelangelus";
+  src: url("../fonts/Michelangelus-BoldItalic.woff2") format("woff2");
+  font-weight: 700; font-style: italic; font-display: swap;
+}
+
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: #FBFBF9; }
+
+a { color: #121212; text-decoration: none; transition: color .2s; }
+a:hover { color: #2B39D9; }
+a:focus-visible { outline: 1px solid #2B39D9; outline-offset: 4px; }
+
+::selection { background: #2B39D9; color: #FBFBF9; }
+
+.ul {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  text-decoration-color: #C8C7C1;
+}
+.ul:hover { text-decoration-color: #2B39D9; }
+
+.row .arr { display: inline-block; transition: transform .3s ease; }
+.row:hover .arr { transform: translateX(10px); }
+
+.dropcap::first-letter {
+  float: left;
+  font-size: 4.6em;
+  line-height: 0.78;
+  padding: 0.06em 0.08em 0 0;
+  font-style: italic;
+  color: #2B39D9;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
