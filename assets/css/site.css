@@ -52,6 +52,28 @@ a:focus-visible { outline: 1px solid #2B39D9; outline-offset: 4px; }
   color: #2B39D9;
 }
 
+/* Section labels are real headings, styled by their inline annotation style */
+h2.sec { margin: 0; font: inherit; color: inherit; letter-spacing: inherit; }
+
+h1, h2, h3 { text-wrap: balance; }
+
+/* Skip link: hidden until focused */
+.skip {
+  position: absolute; left: 16px; top: -100px; z-index: 10;
+  padding: 10px 14px; background: #121212; color: #FBFBF9;
+  font: 14px/1 "IBM Plex Mono", ui-monospace, monospace;
+}
+.skip:focus { top: 16px; color: #FBFBF9; }
+
+/* Small text links still get a 24px target (WCAG 2.2 AA) */
+header nav a,
+footer > div a,
+h2.sec + a {
+  display: inline-flex; align-items: center; min-height: 24px;
+}
+
+[data-clock] { font-variant-numeric: tabular-nums; }
+
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
 }

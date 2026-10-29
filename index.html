@@ -15,7 +15,8 @@
 <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
-<div style="min-height: 100vh; background: #FBFBF9; color: #121212; font-family: 'Michelangelus', Georgia, serif; -webkit-font-smoothing: antialiased">
+<a class="skip" href="#main">Skip to content</a>
+<div style="min-height: 100vh; min-height: 100dvh; background: #FBFBF9; color: #121212; font-family: 'Michelangelus', Georgia, serif; -webkit-font-smoothing: antialiased">
 <div style="max-width: 1440px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
 
 <header style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 16px 40px; padding: 28px 0 22px; border-bottom: 1px solid #E3E2DD">
@@ -31,6 +32,8 @@
 </nav>
 <div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #6B6B66">Lecco, <time data-clock>--:--</time></div>
 </header>
+
+<main id="main">
 
 <section style="padding: clamp(72px, 11vw, 168px) 0 clamp(64px, 8vw, 112px)">
 <div style="display: flex; flex-wrap: wrap; gap: 8px 32px; margin-bottom: clamp(32px, 4vw, 56px); font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #6B6B66">
@@ -48,7 +51,7 @@
 </section>
 
 <section style="display: flex; flex-wrap: wrap; gap: 24px 48px; padding: 0 0 clamp(72px, 9vw, 128px)">
-<div style="flex: 0 0 260px; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #6B6B66; padding-top: 10px">§ 00.1 — abstract</div>
+<h2 class="sec" style="flex: 0 0 260px; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #6B6B66; padding-top: 10px">§ 00.1 — abstract</h2>
 <div style="flex: 1 1 520px; max-width: 780px">
 <p style="margin: 0 0 24px; font-size: clamp(22px, 2.3vw, 31px); line-height: 1.32; letter-spacing: -0.005em; text-wrap: pretty">I design, simulate and qualify hardware that has to survive vacuum, cold and launch. For four years I led the thermo-mechanical architecture of <a href="research.html" class="ul">MiLi</a>, a miniaturised LiDAR built to read the atmosphere of Mars.</p>
 <p style="margin: 0; font-size: clamp(19px, 1.6vw, 22px); line-height: 1.5; color: #4A4A46; text-wrap: pretty">Trained as a welding engineer in Moscow, detoured through deep-tech investment, finished a PhD at Politecnico di Milano. Today: process engineering at Technoprobe, and a nanosatellite startup on the side.</p>
@@ -76,7 +79,7 @@
 
 <section aria-label="Contents" style="padding: clamp(80px, 10vw, 144px) 0 0">
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 32px; margin-bottom: 28px; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #6B6B66">
-<span>§ 00.2 — contents</span>
+<h2 class="sec">§ 00.2 — contents</h2>
 <span>two about work, two about life</span>
 </div>
 
@@ -105,6 +108,8 @@
 <span class="arr" style="flex: 0 0 auto; font-size: 32px">→</span>
 </a>
 </section>
+
+</main>
 
 <footer style="margin-top: clamp(96px, 12vw, 176px); padding: 48px 0 36px; border-top: 1px solid #121212">
 <div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #6B6B66; margin-bottom: 20px">§ — correspondence</div>

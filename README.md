@@ -32,6 +32,19 @@ assets/
 - Palette: paper `#FBFBF9`, ink `#121212`, muted `#6B6B66`, rule `#E3E2DD`, signal `#2B39D9`.
 - Philosophy: content first, typography does the work, one accent colour, no ornament.
 
+## Quality checklist (UI UX Pro Max)
+
+Checked at 375 / 768 / 1024 / 1440 px.
+
+- [x] Text contrast ≥ 4.5:1 (muted `#6B6B66` 5.2:1, signal `#2B39D9` 7.5:1)
+- [x] No horizontal scroll at any width
+- [x] Skip link and `<main>` landmark
+- [x] Sequential headings (section labels are real `h2`)
+- [x] Small text links have 24 px targets (WCAG 2.2 AA)
+- [x] Visible `:focus-visible`, `prefers-reduced-motion` respected
+- [x] `font-display: swap`, critical fonts preloaded, `100dvh`
+- [ ] Replace the 16 placeholder `href="#"` links
+
 ## TODO
 
 - Fill `[bracketed]` placeholders (photo, captions, years, personal details).
