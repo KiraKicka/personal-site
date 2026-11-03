@@ -1,129 +1,163 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="day">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kirill Potemkin — Field notes</title>
-<meta name="description" content="Field notes: small facts, loosely filed.">
-<meta name="theme-color" content="#FBFBF9">
+<title>Notes — Kirill Potemkin</title>
+<meta name="description" content="Things that aren't on Kirill Potemkin's CV.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Notes — Kirill Potemkin">
+<meta property="og:description" content="Things that aren't on Kirill Potemkin's CV.">
+<meta name="color-scheme" content="light dark">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="assets/fonts/Michelangelus-Regular.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/fonts/Michelangelus-Italic.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css">
+<script>(function(){var t;try{t=localStorage.getItem('kp-theme')}catch(e){}if(t!=='day'&&t!=='night'){t='day';try{if(matchMedia('(prefers-color-scheme: dark)').matches)t='night'}catch(e){}}document.documentElement.setAttribute('data-theme',t)})()</script>
+<style>
+@font-face{font-family:"Michelangelus";src:url("assets/fonts/Michelangelus-Regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Michelangelus";src:url("assets/fonts/Michelangelus-Italic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Michelangelus";src:url("assets/fonts/Michelangelus-Bold.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Michelangelus";src:url("assets/fonts/Michelangelus-BoldItalic.woff2") format("woff2");font-weight:700;font-style:italic;font-display:swap}
+:root{--paper:#FFFFFF;--ink:#000000;--text:#2B2B2B;--muted:#5E5E5E;--faint:#767676;--signal:#2B39D9;--rule-soft:#BDBDBD;color-scheme:light}
+:root[data-theme="night"]{--paper:#0F2341;--ink:#F2F4F8;--text:#DCE2EC;--muted:#A7B3C7;--faint:#8C9AB2;--signal:#9FB8FF;--rule-soft:#4A5D7E;color-scheme:dark}
+body{margin:0;background:var(--paper)}
+.tb{grid-template-columns:repeat(4,minmax(0,1fr))}
+.tb .w3{grid-column:span 3}
+@media (max-width:640px){.tb{grid-template-columns:repeat(2,minmax(0,1fr))}.tb .w3,.tb > div:last-child{grid-column:1 / -1}}
+a{color:var(--ink);text-decoration:none;transition:color .2s}
+a:hover{color:var(--signal)}
+a:focus-visible{outline:1px solid var(--signal);outline-offset:4px}
+nav a,footer a{display:inline-flex;align-items:center;min-height:24px}
+::selection{background:var(--signal);color:var(--paper)}
+.tb > div{border-left:1px solid var(--ink);border-top:1px solid var(--ink)}
+.u{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.2em;text-decoration-color:var(--rule-soft)}
+.u:hover{text-decoration-color:var(--signal)}
+.cur{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.3em}
+</style>
+<script src="assets/site.js" defer></script>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<div style="min-height: 100vh; min-height: 100dvh; background: #FBFBF9; color: #121212; font-family: 'Michelangelus', Georgia, serif; -webkit-font-smoothing: antialiased">
-<div style="max-width: 1440px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div class="page" style="min-height: 100vh; background: var(--paper); color: var(--ink); font-family: 'Michelangelus', Georgia, serif; -webkit-font-smoothing: antialiased; padding: clamp(6px, 1vw, 14px); box-sizing: border-box; overflow-x: clip; display: flex; flex-direction: column">
+<div style="position: relative; flex: 1 0 auto; display: flex; flex-direction: column; width: 100%; max-width: calc(1440px + 2 * clamp(12px, 2vw, 28px)); margin: 0 auto; padding: clamp(12px, 2vw, 28px); border: 1px solid var(--faint); box-sizing: border-box">
+<div style="position: relative; flex: 1 0 auto; display: flex; flex-direction: column; border: 1px solid var(--ink); box-sizing: border-box">
 
-<header style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 16px 40px; padding: 28px 0 22px; border-bottom: 1px solid #E3E2DD">
-<a href="index.html" style="font-size: 24px; font-style: italic; letter-spacing: -0.01em">Kirill Potemkin</a>
-<nav aria-label="Primary" style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 26px; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.02em">
-<a href="index.html"><span style="color: #6B6B66">01</span>&#160;Index</a>
-<span style="color: #6B6B66">/ work</span>
-<a href="work.html"><span style="color: #6B6B66">02</span>&#160;Work</a>
-<a href="research.html"><span style="color: #6B6B66">03</span>&#160;Research</a>
-<span style="color: #6B6B66">/ life</span>
-<a href="bio.html"><span style="color: #6B6B66">04</span>&#160;Bio</a>
-<a href="notes.html" aria-current="page" style="color: #2B39D9">05&#160;Field notes</a>
+<div aria-hidden="true" style="position: absolute; left: 0; right: 0; top: calc(-1 * clamp(12px, 2vw, 28px)); height: clamp(12px, 2vw, 28px); display: flex; justify-content: space-around; align-items: center; font-size: 12px; font-style: italic; color: var(--faint)">
+<span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+</div>
+<div aria-hidden="true" style="position: absolute; top: 0; bottom: 0; left: calc(-1 * clamp(12px, 2vw, 28px)); width: clamp(12px, 2vw, 28px); display: flex; flex-direction: column; justify-content: space-around; align-items: center; font-size: 12px; font-style: italic; color: var(--faint)">
+<span>A</span><span>B</span><span>C</span><span>D</span>
+</div>
+<div aria-hidden="true" style="position: absolute; left: 0; right: 0; bottom: calc(-1 * clamp(12px, 2vw, 28px)); height: clamp(12px, 2vw, 28px); display: flex; justify-content: space-around; align-items: center; font-size: 12px; font-style: italic; color: var(--faint)">
+<span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+</div>
+<div aria-hidden="true" style="position: absolute; top: 0; bottom: 0; right: calc(-1 * clamp(12px, 2vw, 28px)); width: clamp(12px, 2vw, 28px); display: flex; flex-direction: column; justify-content: space-around; align-items: center; font-size: 12px; font-style: italic; color: var(--faint)">
+<span>A</span><span>B</span><span>C</span><span>D</span>
+</div>
+
+<div style="flex: 1 0 auto; display: flex; flex-direction: column; padding: clamp(20px, 4vw, 56px) clamp(20px, 4vw, 56px) 0">
+
+<header style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: flex-end; gap: 16px 40px">
+<nav aria-label="Primary" style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 32px; font-size: 19px">
+<a href="index.html">Index</a>
+<a href="work.html">Work</a>
+<a href="bio.html">Bio</a>
+<a href="notes.html" class="cur" aria-current="page">Notes</a>
 </nav>
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #6B6B66">Lecco, <time data-clock>--:--</time></div>
 </header>
 
-<main id="main">
-
-<section style="padding: clamp(72px, 10vw, 152px) 0 clamp(56px, 7vw, 104px)">
-<div style="display: flex; flex-wrap: wrap; gap: 8px 32px; margin-bottom: clamp(28px, 3vw, 44px); font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #6B6B66">
-<span>§ 05</span>
-<span>Field notes</span>
-<span>updated whenever</span>
-</div>
-<h1 style="margin: 0; font-weight: 400; font-size: clamp(60px, 12vw, 184px); line-height: 0.88; letter-spacing: -0.045em"><span style="display: block">field</span><span style="display: block; padding-left: 14%"><em>notes</em></span></h1>
-<p style="margin: clamp(24px, 3vw, 40px) 0 0 clamp(0px, 22%, 320px); max-width: 640px; font-size: clamp(22px, 2.2vw, 30px); line-height: 1.3; font-style: italic; color: #4A4A46; text-wrap: pretty">Small facts, loosely filed. Not on the CV.</p>
+<main style="flex: 1 0 auto">
+<section style="padding: clamp(96px, 12vw, 176px) 0 clamp(72px, 8vw, 120px)">
+<h1 style="margin: 0; font-weight: 400; font-size: clamp(64px, 13vw, 200px); line-height: 0.88; letter-spacing: -0.045em">notes</h1>
+<p style="margin: clamp(24px, 3vw, 40px) 0 0 clamp(0px, 22%, 320px); max-width: 620px; font-size: clamp(21px, 2vw, 27px); line-height: 1.35; font-style: italic; color: var(--muted); text-wrap: pretty">Small facts that aren’t on the CV.</p>
 </section>
 
-<section aria-label="Notes" style="display: flex; flex-wrap: wrap; column-gap: 64px; border-top: 1px solid #121212">
-<div style="flex: 1 1 520px; padding: 32px 0 40px; border-bottom: 1px solid #E3E2DD">
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #2B39D9; margin-bottom: 16px">N° 01</div>
-<p style="margin: 0; font-size: clamp(24px, 2.2vw, 31px); line-height: 1.28; letter-spacing: -0.005em; text-wrap: pretty">Trained as a welding engineer. Then spent four years on an instrument meant for Mars.</p>
-</div>
-<div style="flex: 1 1 520px; padding: 32px 0 40px; border-bottom: 1px solid #E3E2DD">
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #2B39D9; margin-bottom: 16px">N° 02</div>
-<p style="margin: 0; font-size: clamp(24px, 2.2vw, 31px); line-height: 1.28; letter-spacing: -0.005em; text-wrap: pretty">Researching the genealogy of the Potemkin family line. <em style="color: #6B6B66">[What you’ve found so far.]</em></p>
-</div>
-<div style="flex: 1 1 520px; padding: 32px 0 40px; border-bottom: 1px solid #E3E2DD">
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #2B39D9; margin-bottom: 16px">N° 03</div>
-<p style="margin: 0; font-size: clamp(24px, 2.2vw, 31px); line-height: 1.28; letter-spacing: -0.005em; text-wrap: pretty">Rescues houseplants other people have given up on.</p>
-</div>
-<div style="flex: 1 1 520px; padding: 32px 0 40px; border-bottom: 1px solid #E3E2DD">
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #2B39D9; margin-bottom: 16px">N° 04</div>
-<p style="margin: 0; font-size: clamp(24px, 2.2vw, 31px); line-height: 1.28; letter-spacing: -0.005em; text-wrap: pretty">Cooks fusion experiments. <em style="color: #6B6B66">[The one that actually worked.]</em></p>
-</div>
-<div style="flex: 1 1 520px; padding: 32px 0 40px; border-bottom: 1px solid #E3E2DD">
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #2B39D9; margin-bottom: 16px">N° 05</div>
-<p style="margin: 0; font-size: clamp(24px, 2.2vw, 31px); line-height: 1.28; letter-spacing: -0.005em; text-wrap: pretty">Reads Korean murim manhwa — preferably with a sardonic antihero in the lead.</p>
-</div>
-<div style="flex: 1 1 520px; padding: 32px 0 40px; border-bottom: 1px solid #E3E2DD">
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #2B39D9; margin-bottom: 16px">N° 06</div>
-<p style="margin: 0; font-size: clamp(24px, 2.2vw, 31px); line-height: 1.28; letter-spacing: -0.005em; text-wrap: pretty">Writing a feature screenplay: two brothers, one road trip, a deliberately scrambled timeline.</p>
-</div>
-<div style="flex: 1 1 520px; padding: 32px 0 40px; border-bottom: 1px solid #E3E2DD">
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #2B39D9; margin-bottom: 16px">N° 07</div>
-<p style="margin: 0; font-size: clamp(24px, 2.2vw, 31px); line-height: 1.28; letter-spacing: -0.005em; text-wrap: pretty">Once wrote for Droider, one of the big Russian-language tech channels on YouTube.</p>
-</div>
-<div style="flex: 1 1 520px; padding: 32px 0 40px; border-bottom: 1px solid #E3E2DD">
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #2B39D9; margin-bottom: 16px">N° 08</div>
-<p style="margin: 0; font-size: clamp(24px, 2.2vw, 31px); line-height: 1.28; letter-spacing: -0.005em; text-wrap: pretty"><em>Love in the Time of Cholera</em>: yes. <em>The Autumn of the Patriarch</em>: no.</p>
-</div>
+<section aria-label="Notes">
+<ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; column-gap: 72px">
+<li style="flex: 1 1 480px; display: flex; gap: 24px; padding: 26px 0">
+<span aria-hidden="true" style="flex: 0 0 36px; font-size: 26px; font-style: italic; color: var(--muted); line-height: 1.28">1.</span>
+<p style="margin: 0; font-size: clamp(23px, 2.1vw, 30px); line-height: 1.3; text-wrap: pretty">Trained as a welding engineer, then spent four years on an instrument meant for Mars.</p>
+</li>
+<li style="flex: 1 1 480px; display: flex; gap: 24px; padding: 26px 0">
+<span aria-hidden="true" style="flex: 0 0 36px; font-size: 26px; font-style: italic; color: var(--muted); line-height: 1.28">2.</span>
+<p style="margin: 0; font-size: clamp(23px, 2.1vw, 30px); line-height: 1.3; text-wrap: pretty">Researching the genealogy of the Potemkin family. Not those Potemkins: no relation to Prince Grigory or the battleship.</p>
+</li>
+<li style="flex: 1 1 480px; display: flex; gap: 24px; padding: 26px 0">
+<span aria-hidden="true" style="flex: 0 0 36px; font-size: 26px; font-style: italic; color: var(--muted); line-height: 1.28">3.</span>
+<p style="margin: 0; font-size: clamp(23px, 2.1vw, 30px); line-height: 1.3; text-wrap: pretty">Loves to cook, Korean food most of all. Recipe suggestions welcome.</p>
+</li>
+<li style="flex: 1 1 480px; display: flex; gap: 24px; padding: 26px 0">
+<span aria-hidden="true" style="flex: 0 0 36px; font-size: 26px; font-style: italic; color: var(--muted); line-height: 1.28">4.</span>
+<p style="margin: 0; font-size: clamp(23px, 2.1vw, 30px); line-height: 1.3; text-wrap: pretty">A big fan of whisky. There used to be a collection; it went the natural way. Now buys a bottle now and then.</p>
+</li>
+</ol>
 </section>
 
-<section aria-label="Currently" style="padding: clamp(80px, 9vw, 128px) 0 0">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 32px; padding-bottom: 20px; border-bottom: 1px solid #121212; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #6B6B66">
-<h2 class="sec">§ 05.1 — currently</h2>
-<span>as of October 2026</span>
-</div>
-<div style="display: flex; flex-wrap: wrap; gap: 40px 48px; padding-top: 36px">
-<div style="flex: 1 1 240px">
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #2B39D9; margin-bottom: 14px">Watching</div>
-<div style="font-size: 22px; line-height: 1.5"><em>Slow Horses</em><br><em>Le Bureau</em><br><em>The Americans</em></div>
-</div>
-<div style="flex: 1 1 240px">
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #2B39D9; margin-bottom: 14px">Reading</div>
-<div style="font-size: 22px; line-height: 1.5">Looking for Mexican literature.<br><span style="color: #6B6B66; font-style: italic">Suggestions welcome.</span></div>
-</div>
-<div style="flex: 1 1 240px">
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #2B39D9; margin-bottom: 14px">Building</div>
-<div style="font-size: 22px; line-height: 1.5"><a href="https://github.com/KiraKicka/stllr-engine" class="ul">stllr-engine</a>, a small design &amp; simulation engine for SATELLARIO</div>
-</div>
-<div style="flex: 1 1 240px">
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #2B39D9; margin-bottom: 14px">Growing</div>
-<div style="font-size: 22px; line-height: 1.5; color: #6B6B66; font-style: italic">[The current rescue plant.]</div>
-</div>
-</div>
+<section aria-labelledby="odd" style="padding-top: clamp(80px, 9vw, 128px)">
+<h2 id="odd" style="margin: 0 0 8px; font-weight: 400; font-size: clamp(30px, 3vw, 40px); letter-spacing: -0.015em">Odd jobs</h2>
+<ul style="list-style: none; margin: 0; padding: 0">
+<li style="display: flex; flex-wrap: wrap; gap: 10px 48px; padding: 28px 0 30px">
+<div style="flex: 0 0 200px; font-size: 18px; font-style: italic; color: var(--muted); line-height: 1.4">2001<br>Seoul</div>
+<h3 style="flex: 1 1 320px; margin: 0; font-weight: 400; font-size: 30px; line-height: 1.08; letter-spacing: -0.015em">Guest actor, child role</h3>
+<p style="flex: 1 1 400px; max-width: 560px; margin: 0; font-size: 19px; line-height: 1.55; color: var(--text)">One episode of a Korean TV drama, entirely in Korean. The brief: sit and cry. I was three.</p>
+</li>
+<li style="display: flex; flex-wrap: wrap; gap: 10px 48px; padding: 28px 0 30px">
+<div style="flex: 0 0 200px; font-size: 18px; font-style: italic; color: var(--muted); line-height: 1.4">2010<br>Kochetok, near Kharkiv</div>
+<h3 style="flex: 1 1 320px; margin: 0; font-weight: 400; font-size: 30px; line-height: 1.08; letter-spacing: -0.015em">Goat herder</h3>
+<p style="flex: 1 1 400px; max-width: 560px; margin: 0; font-size: 19px; line-height: 1.55; color: var(--text)">A month with a village herd. The goal was a fishing rod. I never bought it.</p>
+</li>
+<li style="display: flex; flex-wrap: wrap; gap: 10px 48px; padding: 28px 0 30px">
+<div style="flex: 0 0 200px; font-size: 18px; font-style: italic; color: var(--muted); line-height: 1.4">2018 – 2019<br>Moscow</div>
+<h3 style="flex: 1 1 320px; margin: 0; font-weight: 400; font-size: 30px; line-height: 1.08; letter-spacing: -0.015em">Camp counsellor</h3>
+<p style="flex: 1 1 400px; max-width: 560px; margin: 0; font-size: 19px; line-height: 1.55; color: var(--text)">Olympiad camps in economics, a subject I never studied. Many of my campers are now at MIT, LSE and Harvard.</p>
+</li>
+</ul>
 </section>
-
 </main>
 
-<footer style="margin-top: clamp(96px, 12vw, 176px); padding: 48px 0 36px; border-top: 1px solid #121212">
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #6B6B66; margin-bottom: 20px">§ — correspondence</div>
-<a href="mailto:kapotemkin@proton.me" class="ul" style="font-size: clamp(34px, 6.4vw, 96px); line-height: 1.05; font-style: italic; letter-spacing: -0.025em; overflow-wrap: anywhere">kapotemkin@proton.me</a>
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px 40px; margin-top: 72px; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #6B6B66">
-<div style="display: flex; flex-wrap: wrap; gap: 8px 24px">
-<a href="#" style="color: #4A4A46">LinkedIn ↗</a>
-<a href="#" style="color: #4A4A46">Google Scholar ↗</a>
-<a href="https://github.com/KiraKicka" style="color: #4A4A46">GitHub ↗</a>
+<footer style="margin: clamp(112px, 12vw, 176px) calc(-1 * clamp(20px, 4vw, 56px)) 0 0; display: flex; justify-content: flex-end">
+<div class="tb" style="flex: 0 1 880px; display: grid">
+<div style="grid-column: span 2; background: var(--paper); padding: 10px 14px 16px">
+<div style="font-size: 13px; font-style: italic; color: var(--muted); margin-bottom: 6px">Title</div>
+<div style="font-size: 22px; line-height: 1.2">Notes</div>
 </div>
-<span>Lecco, Italy · 45.8566° N, 9.3977° E</span>
-<a href="index.html" class="row" style="color: #4A4A46">Back to 01 Index <span class="arr">→</span></a>
+<div style="grid-column: span 2; background: var(--paper); padding: 10px 14px 16px">
+<div style="font-size: 13px; font-style: italic; color: var(--muted); margin-bottom: 6px">Write to</div>
+<a href="#" data-email class="u" style="font-size: clamp(20px, 2vw, 26px); line-height: 1.15; font-style: italic; overflow-wrap: anywhere">email</a>
+</div>
+<div style="background: var(--paper); padding: 10px 14px 16px">
+<div style="font-size: 13px; font-style: italic; color: var(--muted); margin-bottom: 6px">Drawn</div>
+<div style="font-size: 19px">K. A. Potemkin</div>
+</div>
+<div style="background: var(--paper); padding: 10px 14px 16px">
+<div style="font-size: 13px; font-style: italic; color: var(--muted); margin-bottom: 6px">Sheet</div>
+<div style="font-size: 19px">4 of 4</div>
+</div>
+<div style="background: var(--paper); padding: 10px 14px 16px">
+<div style="font-size: 13px; font-style: italic; color: var(--muted); margin-bottom: 6px">Revision</div>
+<div style="font-size: 19px">D</div>
+</div>
+<div style="background: var(--paper); padding: 10px 14px 16px">
+<div style="font-size: 13px; font-style: italic; color: var(--muted); margin-bottom: 6px">Date</div>
+<div style="font-size: 19px">02.11.2026</div>
+</div>
+<div class="w3" style="background: var(--paper); padding: 10px 14px 16px">
+<div style="font-size: 13px; font-style: italic; color: var(--muted); margin-bottom: 6px">Elsewhere</div>
+<div style="display: flex; flex-wrap: wrap; gap: 0 24px; font-size: 19px">
+<a href="https://www.linkedin.com/in/kirakicka" class="u">LinkedIn</a>
+<a href="#" class="u">Google Scholar</a>
+<a href="https://github.com/KiraKicka" class="u">GitHub</a>
+<a href="https://www.instagram.com/kirakicka" class="u">Instagram</a>
+</div>
+</div>
+<div style="background: var(--paper); padding: 10px 14px 16px">
+<div style="font-size: 13px; font-style: italic; color: var(--muted); margin-bottom: 6px">Back to</div>
+<a href="index.html" class="u" style="font-size: 19px">Index</a>
+</div>
 </div>
 </footer>
 
 </div>
 </div>
-
-<script src="assets/js/clock.js" defer></script>
+</div>
+</div>
 </body>
 </html>

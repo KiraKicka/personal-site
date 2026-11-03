@@ -1,121 +1,218 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="day">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kirill Potemkin — Bio</title>
-<meta name="description" content="Bio: Rostov-on-Don, Moscow, Madrid, Lecco.">
-<meta name="theme-color" content="#FBFBF9">
+<title>Bio — Kirill Potemkin</title>
+<meta name="description" content="The longer version: from Rostov-on-Don to Lecco, and the languages Kirill Potemkin speaks.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bio — Kirill Potemkin">
+<meta property="og:description" content="The longer version: from Rostov-on-Don to Lecco, and the languages Kirill Potemkin speaks.">
+<meta name="color-scheme" content="light dark">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="assets/fonts/Michelangelus-Regular.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/fonts/Michelangelus-Italic.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css">
+<script>(function(){var t;try{t=localStorage.getItem('kp-theme')}catch(e){}if(t!=='day'&&t!=='night'){t='day';try{if(matchMedia('(prefers-color-scheme: dark)').matches)t='night'}catch(e){}}document.documentElement.setAttribute('data-theme',t)})()</script>
+<style>
+@font-face{font-family:"Michelangelus";src:url("assets/fonts/Michelangelus-Regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Michelangelus";src:url("assets/fonts/Michelangelus-Italic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Michelangelus";src:url("assets/fonts/Michelangelus-Bold.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Michelangelus";src:url("assets/fonts/Michelangelus-BoldItalic.woff2") format("woff2");font-weight:700;font-style:italic;font-display:swap}
+:root{--paper:#FFFFFF;--ink:#000000;--text:#2B2B2B;--muted:#5E5E5E;--faint:#767676;--signal:#2B39D9;--rule-soft:#BDBDBD;color-scheme:light}
+:root[data-theme="night"]{--paper:#0F2341;--ink:#F2F4F8;--text:#DCE2EC;--muted:#A7B3C7;--faint:#8C9AB2;--signal:#9FB8FF;--rule-soft:#4A5D7E;color-scheme:dark}
+body{margin:0;background:var(--paper)}
+.tb{grid-template-columns:repeat(4,minmax(0,1fr))}
+.tb .w3{grid-column:span 3}
+@media (max-width:640px){.tb{grid-template-columns:repeat(2,minmax(0,1fr))}.tb .w3,.tb > div:last-child{grid-column:1 / -1}}
+a{color:var(--ink);text-decoration:none;transition:color .2s}
+a:hover{color:var(--signal)}
+a:focus-visible{outline:1px solid var(--signal);outline-offset:4px}
+nav a,footer a{display:inline-flex;align-items:center;min-height:24px}
+::selection{background:var(--signal);color:var(--paper)}
+.tb > div{border-left:1px solid var(--ink);border-top:1px solid var(--ink)}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.04);opacity:0;transition:opacity 1.2s ease}
+.ph img.on{opacity:1}
+.tbtn{font:inherit;color:var(--ink);background:none;border:0;padding:0;min-height:24px;cursor:pointer;transition:color .2s}
+.tbtn:hover{color:var(--signal)}
+.tbtn:focus-visible{outline:1px solid var(--signal);outline-offset:4px}
+@media (prefers-reduced-motion:reduce){.ph img{transition:none}}
+.u{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.2em;text-decoration-color:var(--rule-soft)}
+.u:hover{text-decoration-color:var(--signal)}
+.cur{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.3em}
+</style>
+<script src="assets/site.js" defer></script>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<div style="min-height: 100vh; min-height: 100dvh; background: #FBFBF9; color: #121212; font-family: 'Michelangelus', Georgia, serif; -webkit-font-smoothing: antialiased">
-<div style="max-width: 1440px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div class="page" style="min-height: 100vh; background: var(--paper); color: var(--ink); font-family: 'Michelangelus', Georgia, serif; -webkit-font-smoothing: antialiased; padding: clamp(6px, 1vw, 14px); box-sizing: border-box; overflow-x: clip; display: flex; flex-direction: column">
+<div style="position: relative; flex: 1 0 auto; display: flex; flex-direction: column; width: 100%; max-width: calc(1440px + 2 * clamp(12px, 2vw, 28px)); margin: 0 auto; padding: clamp(12px, 2vw, 28px); border: 1px solid var(--faint); box-sizing: border-box">
+<div style="position: relative; flex: 1 0 auto; display: flex; flex-direction: column; border: 1px solid var(--ink); box-sizing: border-box">
 
-<header style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 16px 40px; padding: 28px 0 22px; border-bottom: 1px solid #E3E2DD">
-<a href="index.html" style="font-size: 24px; font-style: italic; letter-spacing: -0.01em">Kirill Potemkin</a>
-<nav aria-label="Primary" style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 26px; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.02em">
-<a href="index.html"><span style="color: #6B6B66">01</span>&#160;Index</a>
-<span style="color: #6B6B66">/ work</span>
-<a href="work.html"><span style="color: #6B6B66">02</span>&#160;Work</a>
-<a href="research.html"><span style="color: #6B6B66">03</span>&#160;Research</a>
-<span style="color: #6B6B66">/ life</span>
-<a href="bio.html" aria-current="page" style="color: #2B39D9">04&#160;Bio</a>
-<a href="notes.html"><span style="color: #6B6B66">05</span>&#160;Field notes</a>
+<div aria-hidden="true" style="position: absolute; left: 0; right: 0; top: calc(-1 * clamp(12px, 2vw, 28px)); height: clamp(12px, 2vw, 28px); display: flex; justify-content: space-around; align-items: center; font-size: 12px; font-style: italic; color: var(--faint)">
+<span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+</div>
+<div aria-hidden="true" style="position: absolute; top: 0; bottom: 0; left: calc(-1 * clamp(12px, 2vw, 28px)); width: clamp(12px, 2vw, 28px); display: flex; flex-direction: column; justify-content: space-around; align-items: center; font-size: 12px; font-style: italic; color: var(--faint)">
+<span>A</span><span>B</span><span>C</span><span>D</span><span>E</span>
+</div>
+<div aria-hidden="true" style="position: absolute; left: 0; right: 0; bottom: calc(-1 * clamp(12px, 2vw, 28px)); height: clamp(12px, 2vw, 28px); display: flex; justify-content: space-around; align-items: center; font-size: 12px; font-style: italic; color: var(--faint)">
+<span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+</div>
+<div aria-hidden="true" style="position: absolute; top: 0; bottom: 0; right: calc(-1 * clamp(12px, 2vw, 28px)); width: clamp(12px, 2vw, 28px); display: flex; flex-direction: column; justify-content: space-around; align-items: center; font-size: 12px; font-style: italic; color: var(--faint)">
+<span>A</span><span>B</span><span>C</span><span>D</span><span>E</span>
+</div>
+
+<div style="flex: 1 0 auto; display: flex; flex-direction: column; padding: clamp(20px, 4vw, 56px) clamp(20px, 4vw, 56px) 0">
+
+<header style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: flex-end; gap: 16px 40px">
+<nav aria-label="Primary" style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 32px; font-size: 19px">
+<a href="index.html">Index</a>
+<a href="work.html">Work</a>
+<a href="bio.html" class="cur" aria-current="page">Bio</a>
+<a href="notes.html">Notes</a>
 </nav>
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #6B6B66">Lecco, <time data-clock>--:--</time></div>
 </header>
 
-<main id="main">
-
-<section style="padding: clamp(72px, 10vw, 152px) 0 clamp(56px, 7vw, 104px)">
-<div style="display: flex; flex-wrap: wrap; gap: 8px 32px; margin-bottom: clamp(28px, 3vw, 44px); font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #6B6B66">
-<span>§ 04</span>
-<span>Bio</span>
-<span>b. 1998, Rostov-on-Don</span>
-</div>
-<h1 style="margin: 0; font-weight: 400; font-size: clamp(64px, 13vw, 200px); line-height: 0.88; letter-spacing: -0.045em"><em>bio</em></h1>
-<p style="margin: clamp(24px, 3vw, 40px) 0 0 clamp(0px, 22%, 320px); max-width: 640px; font-size: clamp(22px, 2.2vw, 30px); line-height: 1.3; font-style: italic; color: #4A4A46; text-wrap: pretty">The longer version, without the bullet points.</p>
+<main style="flex: 1 0 auto">
+<section style="padding: clamp(96px, 12vw, 176px) 0 clamp(72px, 8vw, 120px)">
+<h1 style="margin: 0; font-weight: 400; font-size: clamp(64px, 13vw, 200px); line-height: 0.88; letter-spacing: -0.045em">bio</h1>
+<p style="margin: clamp(24px, 3vw, 40px) 0 0 clamp(0px, 22%, 320px); max-width: 620px; font-size: clamp(21px, 2vw, 27px); line-height: 1.35; font-style: italic; color: var(--muted); text-wrap: pretty">The longer version, without the bullet points.</p>
 </section>
 
-<section aria-label="Story" style="display: flex; flex-wrap: wrap; gap: 48px 72px; align-items: flex-start; border-top: 1px solid #121212; padding-top: 40px">
-
-<figure style="flex: 0 1 440px; margin: 0">
-<div style="position: relative; aspect-ratio: 4 / 5; border: 1px solid #C8C7C1; background: #F4F4F0; overflow: hidden">
-<div aria-hidden="true" style="position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: #DCDBD5"></div>
-<div aria-hidden="true" style="position: absolute; top: 50%; left: 0; right: 0; height: 1px; background: #DCDBD5"></div>
-<div style="position: absolute; left: 18px; bottom: 16px; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #6B6B66">[ portrait — black &amp; white ]</div>
+<section aria-label="Story" style="display: flex; flex-wrap: wrap; gap: 48px 72px; align-items: flex-start">
+<figure aria-roledescription="carousel" aria-label="Photos" data-carousel style="flex: 0 1 420px; margin: 0; min-width: 0">
+<div class="ph" style="position: relative; aspect-ratio: 3 / 4; border: 1px solid var(--ink); overflow: hidden; background: var(--rule-soft)">
+<img src="assets/photos/bio-1-bergamo.jpg" data-cap="Bergamo, Città Alta, April 2026" data-coord="45.70° N, 9.67° E" alt="Kirill on a terrace in Bergamo’s upper town, bell towers behind him" class="on" aria-hidden="false" decoding="async">
+<img src="assets/photos/bio-2-lecco.jpg" data-cap="Above Lecco, May 2026" data-coord="45.86° N, 9.44° E" alt="Kirill at a railing on a mountain above Lecco, the lake and the town below" aria-hidden="true" decoding="async" loading="lazy" style="object-position: 50% 45%">
+<img src="assets/photos/bio-3-warsaw.jpg" data-cap="Warsaw, Old Town, May 2026" data-coord="52.25° N, 21.01° E" alt="Kirill raising a litre mug of beer in a Warsaw beer hall" aria-hidden="true" decoding="async" loading="lazy">
+<img src="assets/photos/bio-4-cdmx-roma.jpg" data-cap="Mexico City, Roma Norte, September 2026" data-coord="19.42° N, 99.17° W" alt="Kirill in a striped shirt in a park in Mexico City, storm clouds overhead" aria-hidden="true" decoding="async" loading="lazy">
+<img src="assets/photos/bio-5-cdmx-chapultepec.jpg" data-cap="Mexico City, Chapultepec, September 2026" data-coord="19.42° N, 99.18° W" alt="Kirill on the terrace of Chapultepec Castle, the towers of Paseo de la Reforma behind him" aria-hidden="true" decoding="async" loading="lazy">
 </div>
-<figcaption style="margin-top: 14px; font-size: 17px; font-style: italic; color: #6B6B66">[Caption: where and when the photo was taken.]</figcaption>
+<figcaption style="margin-top: 12px">
+<div aria-live="off" data-c-live style="font-size: 17px; line-height: 1.4; font-style: italic; color: var(--muted)">View <span data-c-num>1</span> of 5. <span data-c-cap>Bergamo, Città Alta, April 2026</span></div>
+<div style="margin-top: 2px; font-size: 15px; color: var(--muted)"><span data-c-coord>45.70° N, 9.67° E</span></div>
+<div role="group" aria-label="Photo controls" style="display: flex; flex-wrap: wrap; gap: 4px 20px; margin-top: 10px; font-size: 17px">
+<button type="button" class="tbtn" data-c="prev">Previous</button>
+<button type="button" class="tbtn" data-c="toggle">Pause</button>
+<button type="button" class="tbtn" data-c="next">Next</button>
+</div>
+</figcaption>
 </figure>
 
-<div style="flex: 1 1 520px; max-width: 700px; font-size: clamp(20px, 1.7vw, 23px); line-height: 1.55; color: #1E1E1C">
-<p class="dropcap" style="margin: 0 0 1.1em; text-wrap: pretty">I was born in Rostov-on-Don in 1998 and studied in Moscow, at Bauman, where I trained as a welding engineer. My thesis was about arc-welding aluminium pressure vessels for aerospace — thermal deformation, hot cracks, and the fixtures that hold it all still.</p>
-<p style="margin: 0 0 1.1em; text-wrap: pretty">Then I spent two years on the other side of the table, as a technology investment analyst at Moscow Partners: reading deep-tech companies for a living and learning to explain engineering to people who sign the cheques.</p>
-<p style="margin: 0 0 1.1em; text-wrap: pretty">In 2022 I moved to Italy for a PhD at Politecnico di Milano, in the MetroSpace Lab on the Lecco campus, and spent four years on MiLi — with a season at INTA in Madrid, aligning optics in a cleanroom.</p>
-<p style="margin: 0 0 1.1em; text-wrap: pretty">I still live in Lecco, between the lake and the mountains. I work as a process engineer at Technoprobe and co-founded SATELLARIO, a nanosatellite startup that listens for GNSS jamming.</p>
-<p style="margin: 0; color: #6B6B66; font-style: italic">[One closing line: what you are looking for next, or what you’d like people to write to you about.]</p>
+<div style="flex: 1 1 520px; max-width: 680px; font-size: clamp(20px, 1.7vw, 23px); line-height: 1.58; color: var(--text)">
+<p style="margin: 0 0 1.1em; text-wrap: pretty">I was born in Rostov-on-Don in 1998 and spent my first five years with my family on the Chung-Ang University campus in Anseong, South Korea. Then came Moscow, with every summer at my grandparents’ in Kharkiv, and from 2010 four years in Warsaw. That is where my Polish and Ukrainian come from.</p>
+<p style="margin: 0 0 1.1em; text-wrap: pretty">In 2014 I came back to Moscow for the HSE Lyceum, to study mathematics and computer science, and then trained as a welding engineer at BMSTU. My thesis was on arc welding of aluminium pressure vessels for aerospace: thermal deformation, hot cracks, and the fixtures that hold it all still.</p>
+<p style="margin: 0 0 1.1em; text-wrap: pretty">In my last two years at BMSTU I also worked as a technology investment analyst at Moscow Partners, assessing deep-tech companies before their IPOs and presenting them to C-level teams. On the side I wrote about technology and tech companies for Bitkogan, a finance channel on Telegram.</p>
+<p style="margin: 0 0 1.1em; text-wrap: pretty">In 2022 I moved to Italy for a PhD at Politecnico di Milano, and stayed. I spent four years in the MetroSpace Lab on the Lecco campus building MiLi, a small LiDAR for Mars, including a season at INTA near Madrid aligning its optics in a cleanroom.</p>
+<p style="margin: 0 0 1.1em; text-wrap: pretty">These days I measure very small things very carefully at Technoprobe, and work on the processes that make them. Technoprobe builds probe cards for testing semiconductors; I am in the division that makes their probe heads. I live in Lecco with my wife, close to the lake and the mountains.</p>
+<p style="margin: 0; text-wrap: pretty">If you’re ever in Lecco, write. I know where the views are best.</p>
 </div>
 </section>
 
-<section aria-label="Coordinates" style="padding: clamp(80px, 9vw, 128px) 0 0">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 32px; padding-bottom: 20px; border-bottom: 1px solid #121212; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #6B6B66">
-<h2 class="sec">§ 04.1 — coordinates</h2>
-<span>four cities, so far</span>
-</div>
-
-<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 40px; padding: 24px 0 26px; border-bottom: 1px solid #E3E2DD">
-<span style="flex: 0 0 120px; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #6B6B66">1998</span>
-<span style="flex: 1 1 320px; font-size: clamp(32px, 3.6vw, 52px); line-height: 1; letter-spacing: -0.02em">Rostov-on-Don</span>
-<span style="flex: 1 1 260px; font-size: 19px; font-style: italic; color: #4A4A46">born</span>
-<span style="flex: 0 0 200px; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #6B6B66">47.2357° N, 39.7015° E</span>
-</div>
-<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 40px; padding: 24px 0 26px; border-bottom: 1px solid #E3E2DD">
-<span style="flex: 0 0 120px; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #6B6B66">[year] — 2022</span>
-<span style="flex: 1 1 320px; font-size: clamp(32px, 3.6vw, 52px); line-height: 1; letter-spacing: -0.02em">Moscow</span>
-<span style="flex: 1 1 260px; font-size: 19px; font-style: italic; color: #4A4A46">Bauman, then Moscow Partners</span>
-<span style="flex: 0 0 200px; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #6B6B66">55.7558° N, 37.6173° E</span>
-</div>
-<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 40px; padding: 24px 0 26px; border-bottom: 1px solid #E3E2DD">
-<span style="flex: 0 0 120px; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #6B6B66">2024</span>
-<span style="flex: 1 1 320px; font-size: clamp(32px, 3.6vw, 52px); line-height: 1; letter-spacing: -0.02em">Madrid</span>
-<span style="flex: 1 1 260px; font-size: 19px; font-style: italic; color: #4A4A46">a season at INTA</span>
-<span style="flex: 0 0 200px; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #6B6B66">40.4168° N, 3.7038° W</span>
-</div>
-<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 40px; padding: 24px 0 26px; border-bottom: 1px solid #121212">
-<span style="flex: 0 0 120px; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #2B39D9">● 2022 — now</span>
-<span style="flex: 1 1 320px; font-size: clamp(32px, 3.6vw, 52px); line-height: 1; letter-spacing: -0.02em"><em>Lecco</em></span>
-<span style="flex: 1 1 260px; font-size: 19px; font-style: italic; color: #4A4A46">the lake, the mountains, home</span>
-<span style="flex: 0 0 200px; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #6B6B66">45.8566° N, 9.3977° E</span>
-</div>
+<section aria-labelledby="places" style="padding-top: clamp(96px, 10vw, 144px)">
+<h2 id="places" style="margin: 0 0 8px; font-weight: 400; font-size: clamp(30px, 3vw, 40px); letter-spacing: -0.015em">Datum points</h2>
+<p style="margin: 0 0 16px; max-width: 560px; font-size: 19px; line-height: 1.5; font-style: italic; color: var(--muted)">Everything else is measured from these.</p>
+<ol style="list-style: none; margin: 0; padding: 0">
+<li style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 8px 40px; padding: 24px 0">
+<span style="flex: 0 0 84px; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; text-align: left"><svg role="img" aria-label="Datum A" width="30" height="46" viewBox="0 0 30 46"><rect x="1" y="1" width="28" height="28" fill="none" style="stroke: var(--signal)" stroke-width="1.2"></rect><text x="15" y="21" text-anchor="middle" font-family="Michelangelus, Georgia, serif" font-style="italic" font-size="17" style="fill: var(--signal)">A</text><line x1="15" y1="29" x2="15" y2="37" style="stroke: var(--signal)" stroke-width="1.2"></line><path d="M8 45 L22 45 L15 37 Z" style="fill: var(--signal)"></path></svg><span style="font-size: 14px; line-height: 1.35; color: var(--faint)">47.24° N<br>39.70° E</span></span>
+<span style="flex: 0 0 150px; padding-top: 0.9em; font-size: 18px; line-height: 1.4; font-style: italic; color: var(--muted)">1998</span>
+<span style="flex: 1 1 260px"><span style="display: block; font-size: clamp(32px, 3.6vw, 52px); line-height: 1; letter-spacing: -0.02em">Rostov-on-Don</span><span style="display: block; margin-top: 8px; font-size: 19px; font-style: italic; color: var(--muted)">Russia</span></span>
+<span style="flex: 1 1 320px; max-width: 520px; padding-top: 0.6em; font-size: 20px; line-height: 1.45; color: var(--text)">Born here.</span>
+</li>
+<li style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 8px 40px; padding: 24px 0">
+<span style="flex: 0 0 84px; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; text-align: left"><svg role="img" aria-label="Datum B" width="30" height="46" viewBox="0 0 30 46"><rect x="1" y="1" width="28" height="28" fill="none" style="stroke: var(--signal)" stroke-width="1.2"></rect><text x="15" y="21" text-anchor="middle" font-family="Michelangelus, Georgia, serif" font-style="italic" font-size="17" style="fill: var(--signal)">B</text><line x1="15" y1="29" x2="15" y2="37" style="stroke: var(--signal)" stroke-width="1.2"></line><path d="M8 45 L22 45 L15 37 Z" style="fill: var(--signal)"></path></svg><span style="font-size: 14px; line-height: 1.35; color: var(--faint)">37.01° N<br>127.28° E</span></span>
+<span style="flex: 0 0 150px; padding-top: 0.9em; font-size: 18px; line-height: 1.4; font-style: italic; color: var(--muted)">1998 – 2003</span>
+<span style="flex: 1 1 260px"><span style="display: block; font-size: clamp(32px, 3.6vw, 52px); line-height: 1; letter-spacing: -0.02em">Anseong</span><span style="display: block; margin-top: 8px; font-size: 19px; font-style: italic; color: var(--muted)">South Korea</span></span>
+<span style="flex: 1 1 320px; max-width: 520px; padding-top: 0.6em; font-size: 20px; line-height: 1.45; color: var(--text)">A happy childhood and kindergarten on the CAU campus.</span>
+</li>
+<li style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 8px 40px; padding: 24px 0">
+<span style="flex: 0 0 84px; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; text-align: left"><svg role="img" aria-label="Datum C" width="30" height="46" viewBox="0 0 30 46"><rect x="1" y="1" width="28" height="28" fill="none" style="stroke: var(--signal)" stroke-width="1.2"></rect><text x="15" y="21" text-anchor="middle" font-family="Michelangelus, Georgia, serif" font-style="italic" font-size="17" style="fill: var(--signal)">C</text><line x1="15" y1="29" x2="15" y2="37" style="stroke: var(--signal)" stroke-width="1.2"></line><path d="M8 45 L22 45 L15 37 Z" style="fill: var(--signal)"></path></svg><span style="font-size: 14px; line-height: 1.35; color: var(--faint)">49.99° N<br>36.23° E</span></span>
+<span style="flex: 0 0 150px; padding-top: 0.9em; font-size: 18px; line-height: 1.4; font-style: italic; color: var(--muted)">2003 – 2010</span>
+<span style="flex: 1 1 260px"><span style="display: block; font-size: clamp(32px, 3.6vw, 52px); line-height: 1; letter-spacing: -0.02em">Kharkiv</span><span style="display: block; margin-top: 8px; font-size: 19px; font-style: italic; color: var(--muted)">Ukraine</span></span>
+<span style="flex: 1 1 320px; max-width: 520px; padding-top: 0.6em; font-size: 20px; line-height: 1.45; color: var(--text)">Every summer, at my grandparents’ home.</span>
+</li>
+<li style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 8px 40px; padding: 24px 0">
+<span style="flex: 0 0 84px; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; text-align: left"><svg role="img" aria-label="Datum D" width="30" height="46" viewBox="0 0 30 46"><rect x="1" y="1" width="28" height="28" fill="none" style="stroke: var(--signal)" stroke-width="1.2"></rect><text x="15" y="21" text-anchor="middle" font-family="Michelangelus, Georgia, serif" font-style="italic" font-size="17" style="fill: var(--signal)">D</text><line x1="15" y1="29" x2="15" y2="37" style="stroke: var(--signal)" stroke-width="1.2"></line><path d="M8 45 L22 45 L15 37 Z" style="fill: var(--signal)"></path></svg><span style="font-size: 14px; line-height: 1.35; color: var(--faint)">55.76° N<br>37.62° E</span></span>
+<span style="flex: 0 0 150px; padding-top: 0.9em; font-size: 18px; line-height: 1.4; font-style: italic; color: var(--muted)">2003 – 2010<br>2014 – 2022</span>
+<span style="flex: 1 1 260px"><span style="display: block; font-size: clamp(32px, 3.6vw, 52px); line-height: 1; letter-spacing: -0.02em">Moscow</span><span style="display: block; margin-top: 8px; font-size: 19px; font-style: italic; color: var(--muted)">Russia</span></span>
+<span style="flex: 1 1 320px; max-width: 520px; padding-top: 0.6em; font-size: 20px; line-height: 1.45; color: var(--text)">My first and last days of school. The Lyceum taught me how to think, Bauman taught me how to survive. In 2022 it was time to go.</span>
+</li>
+<li style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 8px 40px; padding: 24px 0">
+<span style="flex: 0 0 84px; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; text-align: left"><svg role="img" aria-label="Datum E" width="30" height="46" viewBox="0 0 30 46"><rect x="1" y="1" width="28" height="28" fill="none" style="stroke: var(--signal)" stroke-width="1.2"></rect><text x="15" y="21" text-anchor="middle" font-family="Michelangelus, Georgia, serif" font-style="italic" font-size="17" style="fill: var(--signal)">E</text><line x1="15" y1="29" x2="15" y2="37" style="stroke: var(--signal)" stroke-width="1.2"></line><path d="M8 45 L22 45 L15 37 Z" style="fill: var(--signal)"></path></svg><span style="font-size: 14px; line-height: 1.35; color: var(--faint)">52.23° N<br>21.01° E</span></span>
+<span style="flex: 0 0 150px; padding-top: 0.9em; font-size: 18px; line-height: 1.4; font-style: italic; color: var(--muted)">2010 – 2014</span>
+<span style="flex: 1 1 260px"><span style="display: block; font-size: clamp(32px, 3.6vw, 52px); line-height: 1; letter-spacing: -0.02em">Warsaw</span><span style="display: block; margin-top: 8px; font-size: 19px; font-style: italic; color: var(--muted)">Poland</span></span>
+<span style="flex: 1 1 320px; max-width: 520px; padding-top: 0.6em; font-size: 20px; line-height: 1.45; color: var(--text)">Teenage years: first love, long nights out, and a few experiments.</span>
+</li>
+<li style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 8px 40px; padding: 24px 0">
+<span style="flex: 0 0 84px; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; text-align: left"><svg role="img" aria-label="Datum F" width="30" height="46" viewBox="0 0 30 46"><rect x="1" y="1" width="28" height="28" fill="none" style="stroke: var(--signal)" stroke-width="1.2"></rect><text x="15" y="21" text-anchor="middle" font-family="Michelangelus, Georgia, serif" font-style="italic" font-size="17" style="fill: var(--signal)">F</text><line x1="15" y1="29" x2="15" y2="37" style="stroke: var(--signal)" stroke-width="1.2"></line><path d="M8 45 L22 45 L15 37 Z" style="fill: var(--signal)"></path></svg><span style="font-size: 14px; line-height: 1.35; color: var(--faint)">40.42° N<br>3.70° W</span></span>
+<span style="flex: 0 0 150px; padding-top: 0.9em; font-size: 18px; line-height: 1.4; font-style: italic; color: var(--muted)">2024</span>
+<span style="flex: 1 1 260px"><span style="display: block; font-size: clamp(32px, 3.6vw, 52px); line-height: 1; letter-spacing: -0.02em">Madrid</span><span style="display: block; margin-top: 8px; font-size: 19px; font-style: italic; color: var(--muted)">Spain</span></span>
+<span style="flex: 1 1 320px; max-width: 520px; padding-top: 0.6em; font-size: 20px; line-height: 1.45; color: var(--text)">A season at INTA.</span>
+</li>
+<li style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 8px 40px; padding: 24px 0">
+<span style="flex: 0 0 84px; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; text-align: left"><svg role="img" aria-label="Datum G" width="30" height="46" viewBox="0 0 30 46"><rect x="1" y="1" width="28" height="28" fill="none" style="stroke: var(--signal)" stroke-width="1.2"></rect><text x="15" y="21" text-anchor="middle" font-family="Michelangelus, Georgia, serif" font-style="italic" font-size="17" style="fill: var(--signal)">G</text><line x1="15" y1="29" x2="15" y2="37" style="stroke: var(--signal)" stroke-width="1.2"></line><path d="M8 45 L22 45 L15 37 Z" style="fill: var(--signal)"></path></svg><span style="font-size: 14px; line-height: 1.35; color: var(--faint)">45.86° N<br>9.40° E</span></span>
+<span style="flex: 0 0 150px; padding-top: 0.9em; font-size: 18px; line-height: 1.4; font-style: italic; color: var(--muted)">2022 – now</span>
+<span style="flex: 1 1 260px"><span style="display: block; font-size: clamp(32px, 3.6vw, 52px); line-height: 1; letter-spacing: -0.02em">Lecco</span><span style="display: block; margin-top: 8px; font-size: 19px; font-style: italic; color: var(--muted)">Italy</span></span>
+<span style="flex: 1 1 320px; max-width: 520px; padding-top: 0.6em; font-size: 20px; line-height: 1.45; color: var(--text)">Home.</span>
+</li>
+</ol>
 </section>
 
+<section aria-labelledby="langs" style="padding-top: clamp(80px, 9vw, 128px)">
+<h2 id="langs" style="margin: 0 0 24px; font-weight: 400; font-size: clamp(30px, 3vw, 40px); letter-spacing: -0.015em">Languages</h2>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 12px 56px; font-size: clamp(26px, 2.6vw, 36px); line-height: 1.2; letter-spacing: -0.01em">
+<li>Russian <em style="font-size: 0.62em; color: var(--muted); letter-spacing: 0">native</em></li>
+<li>English <em style="font-size: 0.62em; color: var(--muted); letter-spacing: 0">fluent</em></li>
+<li>Italian <em style="font-size: 0.62em; color: var(--muted); letter-spacing: 0">getting there</em></li>
+<li role="presentation" aria-hidden="true" style="flex-basis: 100%; height: 0"></li>
+<li>Ukrainian <em style="font-size: 0.62em; color: var(--muted); letter-spacing: 0">conversational</em></li>
+<li>Polish <em style="font-size: 0.62em; color: var(--muted); letter-spacing: 0">conversational</em></li>
+</ul>
+</section>
 </main>
 
-<footer style="margin-top: clamp(96px, 12vw, 176px); padding: 48px 0 36px; border-top: 1px solid #121212">
-<div style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #6B6B66; margin-bottom: 20px">§ — correspondence</div>
-<a href="mailto:kapotemkin@proton.me" class="ul" style="font-size: clamp(34px, 6.4vw, 96px); line-height: 1.05; font-style: italic; letter-spacing: -0.025em; overflow-wrap: anywhere">kapotemkin@proton.me</a>
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px 40px; margin-top: 72px; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 12px; color: #6B6B66">
-<div style="display: flex; flex-wrap: wrap; gap: 8px 24px">
-<a href="#" style="color: #4A4A46">LinkedIn ↗</a>
-<a href="#" style="color: #4A4A46">Google Scholar ↗</a>
-<a href="https://github.com/KiraKicka" style="color: #4A4A46">GitHub ↗</a>
+<footer style="margin: clamp(112px, 12vw, 176px) calc(-1 * clamp(20px, 4vw, 56px)) 0 0; display: flex; justify-content: flex-end">
+<div class="tb" style="flex: 0 1 880px; display: grid">
+<div style="grid-column: span 2; background: var(--paper); padding: 10px 14px 16px">
+<div style="font-size: 13px; font-style: italic; color: var(--muted); margin-bottom: 6px">Title</div>
+<div style="font-size: 22px; line-height: 1.2">Bio</div>
 </div>
-<span>Lecco, Italy · 45.8566° N, 9.3977° E</span>
-<a href="notes.html" class="row" style="color: #4A4A46">Next: 05 Field notes <span class="arr">→</span></a>
+<div style="grid-column: span 2; background: var(--paper); padding: 10px 14px 16px">
+<div style="font-size: 13px; font-style: italic; color: var(--muted); margin-bottom: 6px">Write to</div>
+<a href="#" data-email class="u" style="font-size: clamp(20px, 2vw, 26px); line-height: 1.15; font-style: italic; overflow-wrap: anywhere">email</a>
+</div>
+<div style="background: var(--paper); padding: 10px 14px 16px">
+<div style="font-size: 13px; font-style: italic; color: var(--muted); margin-bottom: 6px">Drawn</div>
+<div style="font-size: 19px">K. A. Potemkin</div>
+</div>
+<div style="background: var(--paper); padding: 10px 14px 16px">
+<div style="font-size: 13px; font-style: italic; color: var(--muted); margin-bottom: 6px">Sheet</div>
+<div style="font-size: 19px">3 of 4</div>
+</div>
+<div style="background: var(--paper); padding: 10px 14px 16px">
+<div style="font-size: 13px; font-style: italic; color: var(--muted); margin-bottom: 6px">Revision</div>
+<div style="font-size: 19px">D</div>
+</div>
+<div style="background: var(--paper); padding: 10px 14px 16px">
+<div style="font-size: 13px; font-style: italic; color: var(--muted); margin-bottom: 6px">Date</div>
+<div style="font-size: 19px">02.11.2026</div>
+</div>
+<div class="w3" style="background: var(--paper); padding: 10px 14px 16px">
+<div style="font-size: 13px; font-style: italic; color: var(--muted); margin-bottom: 6px">Elsewhere</div>
+<div style="display: flex; flex-wrap: wrap; gap: 0 24px; font-size: 19px">
+<a href="https://www.linkedin.com/in/kirakicka" class="u">LinkedIn</a>
+<a href="#" class="u">Google Scholar</a>
+<a href="https://github.com/KiraKicka" class="u">GitHub</a>
+<a href="https://www.instagram.com/kirakicka" class="u">Instagram</a>
+</div>
+</div>
+<div style="background: var(--paper); padding: 10px 14px 16px">
+<div style="font-size: 13px; font-style: italic; color: var(--muted); margin-bottom: 6px">Next sheet</div>
+<a href="notes.html" class="u" style="font-size: 19px">Notes</a>
+</div>
 </div>
 </footer>
 
 </div>
 </div>
-
-<script src="assets/js/clock.js" defer></script>
+</div>
+</div>
 </body>
 </html>
