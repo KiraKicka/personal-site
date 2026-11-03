@@ -86,7 +86,7 @@ Enforce HTTPS is on. Every page except `404.html` has an absolute `og:url` and `
 
 ## Still to fill in
 
-- Google Scholar URL (Index footer and every title block: currently `href="#"`)
+- Google Scholar URL (the "All publications" line on `research.html`: currently `href="#"`). Scholar lives only there, not in the title blocks or the Index footer.
 - DOIs for the four publications on `research.html`
 - MiLi CAD render and caption (`research.html`, figure "View A.")
 - Exact mountain for "Above Lecco" in the Bio carousel (both the `data-cap` and the visible caption)

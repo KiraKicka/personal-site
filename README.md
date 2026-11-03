@@ -59,7 +59,7 @@ The site is live at <https://andreevi.ch> (DNS at Infomaniak). The steps below a
 
 ## Still to fill in
 
-- Google Scholar link (Index footer and title blocks: `href="#"`)
+- Google Scholar link (the "All publications" line on `research.html`: `href="#"`)
 - DOIs for the four publications on `research.html`
 - MiLi CAD render and its caption on `research.html`
 - Exact name of the mountain for "Above Lecco" in `bio.html`
