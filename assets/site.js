@@ -55,11 +55,6 @@
     setInterval(tick, 10000);
   }
 
-  /* Cover name: the middle initial slides in on first hover and stays. */
-  document.querySelectorAll('.name').forEach(function (h) {
-    h.addEventListener('mouseenter', function () { h.classList.add('on'); }, { once: true });
-  });
-
   /* Bio carousel. */
   document.querySelectorAll('[data-carousel]').forEach(function (fig) {
     var slides = Array.prototype.slice.call(fig.querySelectorAll('img[data-cap]'));

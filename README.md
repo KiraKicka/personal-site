@@ -14,7 +14,7 @@ notes.html      Sheet 4
 research.html   attachment to Sheet 2 (MiLi), linked from Work and Index
 404.html        shown by GitHub Pages for unknown addresses
 assets/
-  site.js       Day/Night theme, email, clocks, the "A." reveal, carousel
+  site.js       Day/Night theme, email, clocks, carousel
   favicon.svg   revision triangle
   fonts/        Michelangelus (woff2)
   photos/       Bio carousel, 900 px, metadata stripped

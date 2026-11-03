@@ -40,12 +40,11 @@ nav a,footer a{display:inline-flex;align-items:center;min-height:24px}
 @media (max-width:760px){.cv{grid-template-columns:repeat(2,minmax(0,1fr))}.cv .w2{grid-column:1 / -1}}
 .ln{animation:rise .9s cubic-bezier(.2,.7,.1,1) both}
 @keyframes rise{from{opacity:0;transform:translateY(.25em)}to{opacity:1;transform:none}}
-.mid{display:inline-block;vertical-align:top;line-height:inherit;overflow:hidden;white-space:nowrap;max-width:0;transition:max-width .6s cubic-bezier(.2,.7,.1,1)}
-.mid>span{display:inline-block;color:var(--signal);opacity:0;transform:translateY(.18em);transition:opacity .4s ease .1s,transform .5s cubic-bezier(.2,.7,.1,1) .1s}
-.name:hover .mid,.name.on .mid{max-width:1.9em}
-.name:hover .mid>span,.name.on .mid>span{opacity:1;transform:none}
-@media (hover:none){.mid{max-width:1.9em}.mid>span{opacity:1;transform:none}}
-@media (prefers-reduced-motion:reduce){.ln{animation:none;opacity:1;transform:none}.mid,.mid>span{transition:none}}
+.mid{display:inline-block;vertical-align:top;line-height:inherit;overflow:hidden;white-space:nowrap;max-width:0;animation:mid-open 1.6s cubic-bezier(.45,0,.15,1) 1.1s forwards}
+.mid>span{display:inline-block;color:var(--signal);opacity:0;transform:translateY(.18em);animation:mid-in 1.4s cubic-bezier(.2,.7,.1,1) 1.6s forwards}
+@keyframes mid-open{to{max-width:1.1em}}
+@keyframes mid-in{to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.ln{animation:none;opacity:1;transform:none}.mid{animation:none;max-width:1.1em}.mid>span{animation:none;opacity:1;transform:none}}
 </style>
 <script src="assets/site.js" defer></script>
 </head>

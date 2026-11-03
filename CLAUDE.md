@@ -8,14 +8,14 @@ A personal website styled as a set of engineering drawing sheets. It's a static 
 
 | Sheet | File | Notes |
 |---|---|---|
-| 1 Index | `index.html` | Cover sheet. Giant name with a hover-revealed blue "A." that stays once shown. Clocks for Lecco and the visitor's time (the visitor's is hidden if they are in Europe/Rome). Day/Night buttons. Language row (EN active; IT and RU "coming"). |
+| 1 Index | `index.html` | Cover sheet. Giant name; a blue "A." slides in slowly on load, after the name rises (pure CSS, no JS). Clocks for Lecco and the visitor's time (the visitor's is hidden if they are in Europe/Rome). Day/Night buttons. Language row (EN active; IT and RU "coming"). |
 | 2 Work | `work.html` | Revisions D→A (newest first) with blue revision triangles. Then Placements, Writing and Schooling, each marked with a detail-callout circle (P/W/S over 2). |
 | — Research | `research.html` | MiLi PhD research. Off-nav; linked from Work rev. B and from Index "Before". |
 | 3 Bio | `bio.html` | Photo carousel, story, datum points A–G (coordinates under the symbol), languages. |
 | 4 Notes | `notes.html` | Notes and odd jobs. |
 | — | `404.html` | Uses root-absolute paths (`/assets/...`). |
 
-`assets/site.js` handles all behaviour: theme, email, clocks, the "A." latch and the carousel. Each page keeps its CSS in a `<style>` block in `<head>`; layout styles are mostly inline.
+`assets/site.js` handles all behaviour: theme, email, clocks and the carousel. Each page keeps its CSS in a `<style>` block in `<head>`; layout styles are mostly inline.
 
 ## Hard rules
 
@@ -59,7 +59,7 @@ A personal website styled as a set of engineering drawing sheets. It's a static 
   - Pattern: each cell gets `border-left` + `border-top`.
   - The container gets `border-right` + `border-bottom`, or the frame provides those edges.
 - Symbols must mean something. Use revision triangles for job revisions, datum symbols for places and detail callouts for Work categories. No decorative numbering, cards, shadows, gradients or rounded corners.
-- Motion stays minimal: the name's rise on load, the "A." reveal and the carousel crossfade. Respect `prefers-reduced-motion`; under it the carousel doesn't autoplay.
+- Motion stays minimal: the name's rise on load, the slow "A." reveal right after it, and the carousel crossfade. Respect `prefers-reduced-motion`; under it the "A." is shown at once and the carousel doesn't autoplay.
 
 ## How to work on it
 
