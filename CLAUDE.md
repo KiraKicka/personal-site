@@ -51,7 +51,7 @@ A personal website styled as a set of engineering drawing sheets. It's a static 
 
 **Drawing-sheet grammar** (the identity; keep it consistent):
 
-- An outer trim line (1 px `--faint`) around an inner frame (1 px `--ink`), with zone numbers 1–6 top and bottom and letters down the sides. They are small italic `--faint` text in the margin between the two lines.
+- A single frame (1 px `--ink`), with zone numbers 1–6 top and bottom and letters down the sides, set as small italic `--faint` text in the margin outside it. There is no outer trim line: the sheet edge is not drawn (the wrapper keeps a `1px solid transparent` border so the geometry stays the same).
 - The header holds only the nav, top-right: Index, Work, Bio, Notes. The current page is underlined with `aria-current`. There is no name at the top left of inner pages, because the title block already carries it.
 - **Title block** (штамп) at the bottom-right of every page except Index, flush with the frame's right and bottom edges. It's a grid of cells: Title, Write to, Drawn, Sheet, Revision, Date, Elsewhere, Next sheet / Back to.
 - Index has its own ruled "cover" grid instead of a title block.
