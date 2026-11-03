@@ -41,6 +41,8 @@ The 404 page uses root paths (`/assets/...`), so it only looks right when served
 
 ## Publish on GitHub Pages with your own domain
 
+The site is live at <https://andreevi.ch> (DNS at Infomaniak). The steps below are how it was set up.
+
 1. Create an empty repository on GitHub (no README), then push:
    ```sh
    git remote add origin https://github.com/<user>/<repo>.git

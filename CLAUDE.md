@@ -76,12 +76,13 @@ A personal website styled as a set of engineering drawing sheets. It's a static 
 
 ## Deploy
 
-GitHub Pages deploys from branch `main`, folder `/ (root)`, with a custom domain set in Settings → Pages. DNS:
+Repo: `KiraKicka/personal-site`. GitHub Pages deploys from branch `main`, folder `/ (root)`, to the custom domain **andreevi.ch** (kept in `CNAME`). DNS is managed at Infomaniak:
 
-- apex: `A` records to `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`;
-- `www`: `CNAME` to `<user>.github.io`.
+- apex: `A` records to `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153` and `AAAA` to `2606:50c0:8000::153` … `2606:50c0:8003::153`;
+- `www`: `CNAME` to `kirakicka.github.io`.
+- The `MX` and `TXT` records (Proton Mail, SPF, SimpleLogin) belong to the mail. Don't touch them.
 
-Then enable Enforce HTTPS. Once the domain is known, add absolute `og:url` / `og:image` and `<link rel="canonical">` to each page.
+Enforce HTTPS is on. Every page except `404.html` has an absolute `og:url` and `<link rel="canonical">` on `https://andreevi.ch/`. There is no `og:image` yet.
 
 ## Still to fill in
 
