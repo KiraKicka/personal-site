@@ -22,6 +22,7 @@ A personal website styled as a set of engineering drawing sheets. It's a static 
 - **Never write the email address in plain text** in HTML, JS strings or anywhere else in the repo. Use `<a href="#" data-email>email</a>`; `site.js` assembles the address from parts at load.
 - Do not publish a phone number, a CV/PDF, or SATELLARIO anywhere.
 - Site copy is English, sentence case. Michelangelus has **no Cyrillic**, so a Russian version needs a second font first.
+- For anything in Russian (`/ru/`), read `RUSSIAN.md` first and follow it.
 - Photos: strip all metadata (GPS!), max 900 px on the long side, JPEG q≈80. They are shown greyscale via CSS (`.ph img{filter:grayscale(1)}`), so keep the files themselves in colour.
 - Keep `CNAME` (GitHub creates it when the custom domain is set) and `.nojekyll`.
 - Don't rewrite my wording in Bio/Notes without asking. Several lines are mine verbatim.
