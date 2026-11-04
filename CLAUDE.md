@@ -77,7 +77,12 @@ A personal website styled as a set of engineering drawing sheets. It's a static 
 
 ## Deploy
 
-Repo: `KiraKicka/personal-site`. GitHub Pages deploys from branch `main`, folder `/ (root)`, to the custom domain **andreevi.ch** (kept in `CNAME`). DNS is managed at Infomaniak:
+Repo: `KiraKicka/personal-site`. GitHub Pages deploys through the workflow `.github/workflows/pages.yml` on every push to `main`, to the custom domain **andreevi.ch** (kept in `CNAME`).
+
+- The licensed TT Marxiana fonts for `/ru/` are **not in this public repo**, and must never be committed here (`.gitignore` blocks them). They live in the private repo `KiraKicka/personal-site-fonts`; the workflow checks it out with a read-only deploy key (Actions secret `FONTS_DEPLOY_KEY`) and copies them into `assets/fonts/` for the build only.
+- For local previews, keep copies of `TTMarxiana-Antiqua.woff2` and `TTMarxiana-AntiquaItalic.woff2` in `assets/fonts/` (ignored by git), or clone the fonts repo and copy them in.
+
+DNS is managed at Infomaniak:
 
 - apex: `A` records to `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153` and `AAAA` to `2606:50c0:8000::153` … `2606:50c0:8003::153`;
 - `www`: `CNAME` to `kirakicka.github.io`.

@@ -1,0 +1,51 @@
+# Deploys the site to GitHub Pages. The licensed TT Marxiana fonts are not in
+# this public repo: they are checked out from the private repo
+# KiraKicka/personal-site-fonts with a read-only deploy key (secret
+# FONTS_DEPLOY_KEY) and copied into assets/fonts/ only for the build.
+name: Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Check out licensed fonts
+        uses: actions/checkout@v5
+        with:
+          repository: KiraKicka/personal-site-fonts
+          ssh-key: ${{ secrets.FONTS_DEPLOY_KEY }}
+          path: _fonts
+
+      - name: Assemble site
+        run: |
+          mkdir -p _site
+          rsync -a --exclude '.git*' --exclude '_fonts' --exclude '_site' --exclude 'tools' ./ _site/
+          cp _fonts/*.woff2 _site/assets/fonts/
+          ls -la _site/assets/fonts
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+      - id: deployment
+        uses: actions/deploy-pages@v4

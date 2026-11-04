@@ -222,7 +222,7 @@
 
 Те же три строки `hreflang` добавь в **английскую** страницу этого листа: они должны указывать друг на друга.
 
-Шрифты положи в `assets/fonts/TTMarxiana-Antiqua.woff2` и `TTMarxiana-AntiquaItalic.woff2`. Grotesque и Elzevir не нужны.
+Шрифты положи в `assets/fonts/TTMarxiana-Antiqua.woff2` и `TTMarxiana-AntiquaItalic.woff2`. Grotesque и Elzevir не нужны. В git их **не коммить**: репозиторий публичный, а лицензия не разрешает раздавать файлы. Они лежат в приватном репо `KiraKicka/personal-site-fonts` и попадают на сайт при сборке (см. Deploy в `CLAUDE.md`); локальные копии в `assets/fonts/` git игнорирует.
 
 ### 3.4 CSS для русских страниц
 

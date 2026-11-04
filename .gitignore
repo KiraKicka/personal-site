@@ -4,3 +4,7 @@ Thumbs.db
 node_modules/
 .vscode/
 .idea/
+
+# Licensed web fonts: kept in the private repo KiraKicka/personal-site-fonts,
+# copied in by .github/workflows/pages.yml at deploy time. Local copies stay here for previewing.
+assets/fonts/TTMarxiana-*
