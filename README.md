@@ -16,7 +16,7 @@ research.html   attachment to Sheet 2 (MiLi), linked from Work and Index
 assets/
   site.js       Day/Night theme, email, clocks, carousel
   favicon.svg   revision triangle
-  fonts/        Michelangelus (woff2)
+  fonts/        Michelangelus (woff2); not in git, they come from the private repo KiraKicka/personal-site-fonts at deploy
   photos/       Bio carousel, 900 px, metadata stripped
 ```
 

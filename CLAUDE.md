@@ -29,7 +29,7 @@ A personal website styled as a set of engineering drawing sheets. It's a static 
 
 ## Design system
 
-**Type:** Michelangelus only (regular, italic; bold exists but is unused). There is no second family and no monospace.
+**Type:** Michelangelus only (regular and italic; bold is not shipped). There is no second family and no monospace.
 - Labels are small italic sentence case, `--muted`, 13–15 px.
 - No ALL CAPS, no letter-spaced eyebrows, no middle-dot meta strings, no "→" decorations.
 - Page headings are giant lowercase words: `work`, `bio`, `notes`. Size `clamp(64px, 13vw, 200px)`, line-height .88, letter-spacing −0.045em.
@@ -79,8 +79,8 @@ A personal website styled as a set of engineering drawing sheets. It's a static 
 
 Repo: `KiraKicka/personal-site`. GitHub Pages deploys through the workflow `.github/workflows/pages.yml` on every push to `main`, to the custom domain **andreevi.ch** (kept in `CNAME`).
 
-- The licensed TT Marxiana fonts for `/ru/` are **not in this public repo**, and must never be committed here (`.gitignore` blocks them). They live in the private repo `KiraKicka/personal-site-fonts`; the workflow checks it out with a read-only deploy key (Actions secret `FONTS_DEPLOY_KEY`) and copies them into `assets/fonts/` for the build only.
-- For local previews, keep copies of `TTMarxiana-Antiqua.woff2` and `TTMarxiana-AntiquaItalic.woff2` in `assets/fonts/` (ignored by git), or clone the fonts repo and copy them in.
+- The licensed fonts (Michelangelus for the English sheets, TT Marxiana for `/ru/`) are **not in this public repo**, and must never be committed here (`.gitignore` blocks `assets/fonts/*.woff2`). They live in the private repo `KiraKicka/personal-site-fonts`; the workflow checks it out with a read-only deploy key (Actions secret `FONTS_DEPLOY_KEY`) and copies them into `assets/fonts/` for the build only.
+- For local previews, keep copies of `Michelangelus-Regular.woff2`, `Michelangelus-Italic.woff2`, `TTMarxiana-Antiqua.woff2` and `TTMarxiana-AntiquaItalic.woff2` in `assets/fonts/` (ignored by git), or clone the fonts repo and copy them in.
 
 DNS is managed at Infomaniak:
 
