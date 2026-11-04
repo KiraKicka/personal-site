@@ -269,7 +269,7 @@
 /* Телефон: отчество отдельной строкой, без раскрытия, только мягкое появление */
 @media (max-width:760px){
   .name .l2{white-space:normal}
-  .mid{display:block;max-width:none;padding-bottom:0;margin-bottom:0;animation:none}
+  .mid{display:block;max-width:none;overflow:visible;padding-bottom:0;margin-bottom:0;animation:none}  /* без overflow:visible срезается низ «Д» */
   .mid>span{padding-left:0}
 }
 @media (prefers-reduced-motion:reduce){
@@ -298,9 +298,11 @@
 
 | Лист | `h1` |
 |---|---|
-| Работа, О&#160;себе, Заметки | `font-size: clamp(72px, 14vw, 210px); line-height: .86; letter-spacing: -0.005em` |
-| Исследование | `clamp(36px, 9.6vw, 160px)`, иначе слово вылезает за рамку на телефоне |
+| Работа, О&#160;себе, Заметки | `font-size: clamp(56px, 14vw, 210px); line-height: .86; letter-spacing: -0.005em` (с минимумом 72px «Заметки» на 320 px шире рамки: 276 px при 227 доступных) |
+| Исследование | `clamp(34px, 9.6vw, 160px)` (при 36px вылезает на 2 px) |
 | Обложка (ФИО) | `clamp(40px, 8.6vw, 124px); line-height: .98` |
+
+**Длинные слова в узких колонках** (таблица «MiLi вкратце», шаги на Research) ставь с мягким переносом `&shy;` по слогам: `термо&shy;регулирование`, `Коорди&shy;натор`. `hyphens:auto` не годится: в Chrome на Windows нет русского словаря, и `overflow-wrap:anywhere` рвёт слова без дефиса где попало.
 
 Правило для нового листа: подбери `vw` так, чтобы самое длинное слово в `h1` при 320 px занимало не больше ширины рамки минус поля. Проверка: `scrollWidth === innerWidth` и ширина `h1` ≤ ширины контейнера.
 

@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="ru" data-theme="day">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Исследование | Кирилл Потёмкин</title>
+<meta name="description" content="MiLi, миниатюрный лидар для Марса: PhD-исследование Кирилла Потёмкина в Politecnico di Milano.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Исследование | Кирилл Потёмкин">
+<meta property="og:description" content="MiLi, миниатюрный лидар для Марса: PhD-исследование Кирилла Потёмкина в Politecnico di Milano.">
+<meta property="og:url" content="https://andreevi.ch/ru/research.html">
+<link rel="canonical" href="https://andreevi.ch/ru/research.html">
+<link rel="alternate" hreflang="en" href="https://andreevi.ch/research.html">
+<link rel="alternate" hreflang="ru" href="https://andreevi.ch/ru/research.html">
+<link rel="alternate" hreflang="x-default" href="https://andreevi.ch/research.html">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/TTMarxiana-Antiqua.woff2" as="font" type="font/woff2" crossorigin>
+<script>(function(){var t;try{t=localStorage.getItem('kp-theme')}catch(e){}if(t!=='day'&&t!=='night'){t='day';try{if(matchMedia('(prefers-color-scheme: dark)').matches)t='night'}catch(e){}}document.documentElement.setAttribute('data-theme',t)})()</script>
+<style>
+@font-face{font-family:"TT Marxiana Antiqua";src:url("../assets/fonts/TTMarxiana-Antiqua.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"TT Marxiana Antiqua";src:url("../assets/fonts/TTMarxiana-AntiquaItalic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap}
+.ru{font-family:"TT Marxiana Antiqua",Georgia,serif;font-weight:400;font-size-adjust:0.5;font-synthesis:none;font-kerning:normal}
+.ru .lb{font-style:italic;color:var(--muted)}
+.ru .num{font-variant-numeric:lining-nums}
+.ru .disp{font-weight:400;font-style:normal;letter-spacing:-0.02em}
+.ru .sym text{font-family:"TT Marxiana Antiqua",Georgia,serif;font-style:italic}
+:root{--paper:#FFFFFF;--ink:#000000;--text:#2B2B2B;--muted:#5E5E5E;--faint:#767676;--signal:#2B39D9;--rule-soft:#BDBDBD;color-scheme:light}
+:root[data-theme="night"]{--paper:#0F2341;--ink:#F2F4F8;--text:#DCE2EC;--muted:#A7B3C7;--faint:#8C9AB2;--signal:#9FB8FF;--rule-soft:#4A5D7E;color-scheme:dark}
+body{margin:0;background:var(--paper)}
+.tb{grid-template-columns:repeat(4,minmax(0,1fr))}
+.tb .w3{grid-column:span 3}
+@media (max-width:640px){.tb{grid-template-columns:repeat(2,minmax(0,1fr))}.tb .w3,.tb > div:last-child{grid-column:1 / -1}}
+a{color:var(--ink);text-decoration:none;transition:color .2s}
+a:hover{color:var(--signal)}
+a:focus-visible{outline:1px solid var(--signal);outline-offset:4px}
+nav a,footer a{display:inline-flex;align-items:center;min-height:24px}
+::selection{background:var(--signal);color:var(--paper)}
+.tb > div{border-left:1px solid var(--ink);border-top:1px solid var(--ink)}
+.u{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.2em;text-decoration-color:var(--rule-soft)}
+.u:hover{text-decoration-color:var(--signal)}
+.pub:hover .t{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.15em;text-decoration-color:var(--signal)}
+</style>
+<script src="../assets/site.js" defer></script>
+</head>
+<body>
+<div class="page ru" style="min-height: 100vh; background: var(--paper); color: var(--ink); -webkit-font-smoothing: antialiased; padding: clamp(6px, 1vw, 14px); box-sizing: border-box; overflow-x: clip; display: flex; flex-direction: column">
+<div style="position: relative; flex: 1 0 auto; display: flex; flex-direction: column; width: 100%; max-width: calc(1440px + 2 * clamp(12px, 2vw, 28px)); margin: 0 auto; padding: clamp(12px, 2vw, 28px); border: 1px solid transparent; box-sizing: border-box">
+<div style="position: relative; flex: 1 0 auto; display: flex; flex-direction: column; border: 1px solid var(--ink); box-sizing: border-box">
+
+<div aria-hidden="true" style="position: absolute; left: 0; right: 0; top: calc(-1 * clamp(12px, 2vw, 28px)); height: clamp(12px, 2vw, 28px); display: flex; justify-content: space-around; align-items: center; font-size: 12px; font-style: italic; color: var(--faint)">
+<span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+</div>
+<div aria-hidden="true" style="position: absolute; top: 0; bottom: 0; left: calc(-1 * clamp(12px, 2vw, 28px)); width: clamp(12px, 2vw, 28px); display: flex; flex-direction: column; justify-content: space-around; align-items: center; font-size: 12px; font-style: italic; color: var(--faint)">
+<span>А</span><span>Б</span><span>В</span><span>Г</span><span>Д</span>
+</div>
+<div aria-hidden="true" style="position: absolute; left: 0; right: 0; bottom: calc(-1 * clamp(12px, 2vw, 28px)); height: clamp(12px, 2vw, 28px); display: flex; justify-content: space-around; align-items: center; font-size: 12px; font-style: italic; color: var(--faint)">
+<span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+</div>
+<div aria-hidden="true" style="position: absolute; top: 0; bottom: 0; right: calc(-1 * clamp(12px, 2vw, 28px)); width: clamp(12px, 2vw, 28px); display: flex; flex-direction: column; justify-content: space-around; align-items: center; font-size: 12px; font-style: italic; color: var(--faint)">
+<span>А</span><span>Б</span><span>В</span><span>Г</span><span>Д</span>
+</div>
+
+<div style="flex: 1 0 auto; display: flex; flex-direction: column; padding: clamp(20px, 4vw, 56px) clamp(20px, 4vw, 56px) 0">
+
+<header style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: flex-end; gap: 16px 40px">
+<nav aria-label="Основная навигация" style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 32px; font-size: 19px">
+<a href="index.html">Главная</a>
+<a href="work.html">Работа</a>
+<a href="bio.html">О&#160;себе</a>
+<a href="notes.html">Заметки</a>
+</nav>
+</header>
+
+<main style="flex: 1 0 auto">
+<section style="padding: clamp(96px, 12vw, 176px) 0 clamp(72px, 8vw, 120px)">
+<h1 class="disp" style="margin: 0; font-weight: 400; font-size: clamp(34px, 9.6vw, 160px); line-height: 0.86; letter-spacing: -0.005em">Исследование</h1>
+<p style="margin: clamp(24px, 3vw, 40px) 0 0 clamp(0px, 22%, 320px); max-width: 620px; font-size: clamp(21px, 2vw, 27px); line-height: 1.35; font-style: italic; color: var(--muted); text-wrap: pretty">В&#160;основном один прибор, разобранный очень подробно.</p>
+</section>
+
+<section aria-labelledby="mili" style="display: flex; flex-wrap: wrap; gap: 48px 64px; align-items: flex-start">
+<div style="flex: 1 1 520px; min-width: 0">
+<h2 id="mili" style="margin: 0; font-weight: 400; font-size: clamp(80px, 11vw, 160px); line-height: 0.86; letter-spacing: -0.04em">MiLi</h2>
+<p style="margin: 28px 0 0; max-width: 580px; font-size: clamp(22px, 2vw, 28px); line-height: 1.34; text-wrap: pretty">Миниатюрный лидар для&#160;зондирования атмосферы Марса. Его лазер должен держать точную температуру, пока всё вокруг бросает из&#160;крайности в&#160;крайность.</p>
+
+<figure style="margin: 48px 0 0">
+<div style="position: relative; aspect-ratio: 4 / 3; border: 1px solid var(--ink); overflow: hidden">
+<svg aria-hidden="true" width="100%" height="100%" style="position: absolute; inset: 0"><line x1="50%" y1="4%" x2="50%" y2="96%" style="stroke: var(--faint)" stroke-width="1" stroke-dasharray="18 4 3 4"></line><line x1="4%" y1="50%" x2="96%" y2="50%" style="stroke: var(--faint)" stroke-width="1" stroke-dasharray="18 4 3 4"></line></svg>
+<div style="position: absolute; left: 16px; bottom: 14px; font-size: 16px; font-style: italic; color: var(--muted)">[CAD-модель MiLi]</div>
+</div>
+<figcaption style="margin-top: 12px; font-size: 17px; font-style: italic; color: var(--muted)">Вид А. [Подпись появится вместе с&#160;рендером.]</figcaption>
+</figure>
+</div>
+
+<div style="flex: 0 1 460px; min-width: 0">
+<table style="width: 100%; border-collapse: collapse; font-size: 20px; line-height: 1.35">
+<caption style="text-align: left; font-size: 17px; font-style: italic; color: var(--muted); padding-bottom: 12px">MiLi вкратце</caption>
+<tbody>
+<tr><th scope="row" style="width: 34%; text-align: left; vertical-align: top; font-weight: 400; font-size: 15px; font-style: italic; color: var(--muted); padding: 12px 14px; border: 1px solid var(--ink)">Объект</th><td style="padding: 10px 14px; border: 1px solid var(--ink)">Атмо&shy;сфера Марса</td></tr>
+<tr><th scope="row" style="text-align: left; vertical-align: top; font-weight: 400; font-size: 15px; font-style: italic; color: var(--muted); padding: 12px 14px; border: 1px solid var(--ink)">Про&shy;грамма</th><td style="padding: 10px 14px; border: 1px solid var(--ink)">Horizon Europe, 2022-2025</td></tr>
+<tr><th scope="row" style="text-align: left; vertical-align: top; font-weight: 400; font-size: 15px; font-style: italic; color: var(--muted); padding: 12px 14px; border: 1px solid var(--ink)">Коорди&shy;натор</th><td style="padding: 10px 14px; border: 1px solid var(--ink)">INTA, Испания</td></tr>
+<tr><th scope="row" style="text-align: left; vertical-align: top; font-weight: 400; font-size: 15px; font-style: italic; color: var(--muted); padding: 12px 14px; border: 1px solid var(--ink)">Партнёры</th><td style="padding: 10px 14px; border: 1px solid var(--ink)">Politecnico di Milano, Италия<br>CINN-CSIC, Испания<br>York University, Канада<br>Asphericon, Германия<br>Integrated Optics, Литва</td></tr>
+<tr><th scope="row" style="text-align: left; vertical-align: top; font-weight: 400; font-size: 15px; font-style: italic; color: var(--muted); padding: 12px 14px; border: 1px solid var(--ink)">Полевые испы&shy;тания</th><td style="padding: 10px 14px; border: 1px solid var(--ink)">Обсер&shy;ватория Йебес, Испания, рядом с&#160;лидаром Phoenix</td></tr>
+<tr><th scope="row" style="text-align: left; vertical-align: top; font-weight: 400; font-size: 15px; font-style: italic; color: var(--muted); padding: 12px 14px; border: 1px solid var(--ink)">Моя часть</th><td style="padding: 10px 14px; border: 1px solid var(--ink)">Опто&shy;механика и&#160;термо&shy;регу&shy;лирование</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section aria-labelledby="how" style="padding-top: clamp(96px, 10vw, 144px)">
+<h2 id="how" style="margin: 0 0 36px; font-weight: 400; font-size: clamp(30px, 3vw, 40px); letter-spacing: -0.015em">Как его строили</h2>
+<ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 44px 48px">
+<li style="flex: 1 1 250px">
+<div aria-hidden="true" style="width: 40px; height: 40px; box-sizing: border-box; border: 1.2px solid var(--signal); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 21px; font-style: italic; color: var(--signal); line-height: 1">1</div>
+<h3 style="margin: 18px 0 10px; font-weight: 400; font-size: 28px; letter-spacing: -0.01em">Конструирование</h3>
+<p style="margin: 0; font-size: 19px; line-height: 1.55; color: var(--text)">Оптическая скамья, крепления излучателя и&#160;детектора в&#160;Creo, чертежи с&#160;GD&amp;T для&#160;своей и&#160;сторонних мастерских. А&#160;ещё испытательная оснастка и&#160;наземное оборудование (GSE).</p>
+</li>
+<li style="flex: 1 1 250px">
+<div aria-hidden="true" style="width: 40px; height: 40px; box-sizing: border-box; border: 1.2px solid var(--signal); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 21px; font-style: italic; color: var(--signal); line-height: 1">2</div>
+<h3 style="margin: 18px 0 10px; font-weight: 400; font-size: 28px; letter-spacing: -0.01em">Термо&shy;регулирование</h3>
+<p style="margin: 0; font-size: 19px; line-height: 1.55; color: var(--text)">Активное термо&shy;регулирование лазера ближнего ИК на&#160;элементах Пельтье: характеризация, настройка ПИД-регулятора в&#160;замкнутом контуре, проверка во&#160;всём рабочем диапазоне.</p>
+</li>
+<li style="flex: 1 1 250px">
+<div aria-hidden="true" style="width: 40px; height: 40px; box-sizing: border-box; border: 1.2px solid var(--signal); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 21px; font-style: italic; color: var(--signal); line-height: 1">3</div>
+<h3 style="margin: 18px 0 10px; font-weight: 400; font-size: 28px; letter-spacing: -0.01em">Расчёты</h3>
+<p style="margin: 0; font-size: 19px; line-height: 1.55; color: var(--text)">Квазистатический, модальный и&#160;термоупругий МКЭ-анализ в&#160;ANSYS Workbench, APDL и&#160;Creo Simulate, ещё до&#160;того, как резать металл.</p>
+</li>
+<li style="flex: 1 1 250px">
+<div aria-hidden="true" style="width: 40px; height: 40px; box-sizing: border-box; border: 1.2px solid var(--signal); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 21px; font-style: italic; color: var(--signal); line-height: 1">4</div>
+<h3 style="margin: 18px 0 10px; font-weight: 400; font-size: 28px; letter-spacing: -0.01em">Испытания</h3>
+<p style="margin: 0; font-size: 19px; line-height: 1.55; color: var(--text)">Программы и&#160;методики испытаний, 150+ часов термовакуума, 5+ вибрационных кампаний, функциональные проверки до&#160;и&#160;после каждой, отчёты об&#160;аномалиях.</p>
+</li>
+</ol>
+</section>
+
+<section aria-labelledby="pubs" style="padding-top: clamp(96px, 10vw, 144px)">
+<h2 id="pubs" style="margin: 0 0 8px; font-weight: 400; font-size: clamp(30px, 3vw, 40px); letter-spacing: -0.015em">Публикации</h2>
+<p style="margin: 0 0 8px; font-size: 19px; font-style: italic; color: var(--muted)">Все статьи на&#160;английском.</p>
+<ul lang="en" style="list-style: none; margin: 0; padding: 0">
+<li><a href="#" class="pub" style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 40px; padding: 26px 0">
+<span style="flex: 0 0 96px; font-size: 22px; font-style: italic; color: var(--muted)">2025</span>
+<span style="flex: 1 1 520px">
+<span class="t" style="display: block; font-size: clamp(24px, 2.2vw, 30px); line-height: 1.22; letter-spacing: -0.01em">Characterisation of the thermal control system for the NIR emitter of a miniaturised lidar for Mars</span>
+<span style="display: block; margin-top: 8px; font-size: 18px; font-style: italic; color: var(--muted)">Potemkin K.A. et al. IEEE MetroAeroSpace, Naples</span>
+</span>
+</a></li>
+<li><a href="#" class="pub" style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 40px; padding: 26px 0">
+<span style="flex: 0 0 96px; font-size: 22px; font-style: italic; color: var(--muted)">2025</span>
+<span style="flex: 1 1 520px">
+<span class="t" style="display: block; font-size: clamp(24px, 2.2vw, 30px); line-height: 1.22; letter-spacing: -0.01em">Additively manufactured lunar regolith ceramics for in-situ opto-mechanical fabrication on the Moon</span>
+<span style="display: block; margin-top: 8px; font-size: 18px; font-style: italic; color: var(--muted)">Potemkin K.A., Isachenkov M. 12th IAA/AIDAA Symposium, Turin</span>
+</span>
+</a></li>
+<li><a href="#" class="pub" style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 40px; padding: 26px 0">
+<span style="flex: 0 0 96px; font-size: 22px; font-style: italic; color: var(--muted)">2024</span>
+<span style="flex: 1 1 520px">
+<span class="t" style="display: block; font-size: clamp(24px, 2.2vw, 30px); line-height: 1.22; letter-spacing: -0.01em">Feasibility design of MiLi, a miniaturized lidar for Mars observation</span>
+<span style="display: block; margin-top: 8px; font-size: 18px; font-style: italic; color: var(--muted)">Scaccabarozzi D., Potemkin K. et al. IEEE MetroAeroSpace, Lublin</span>
+</span>
+</a></li>
+<li><a href="#" class="pub" style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 40px; padding: 26px 0">
+<span style="flex: 0 0 96px; font-size: 22px; font-style: italic; color: var(--muted)">2024</span>
+<span style="flex: 1 1 520px">
+<span class="t" style="display: block; font-size: clamp(24px, 2.2vw, 30px); line-height: 1.22; letter-spacing: -0.01em">MiLi project: thermo-mechanical design of a miniaturized LiDAR for Mars</span>
+<span style="display: block; margin-top: 8px; font-size: 18px; font-style: italic; color: var(--muted)">Scaccabarozzi D., Potemkin K. et al. IAC, Milan</span>
+</span>
+</a></li>
+</ul>
+<p style="margin: 16px 0 0; font-size: 19px"><a href="#" class="u">Все публикации в&#160;Google Scholar</a></p>
+</section>
+</main>
+
+<footer style="margin: clamp(112px, 12vw, 176px) calc(-1 * clamp(20px, 4vw, 56px)) 0 0; display: flex; justify-content: flex-end">
+<div class="tb" style="flex: 0 1 880px; display: grid">
+<div style="grid-column: span 2; background: var(--paper); padding: 10px 14px 16px">
+<div style="font-size: 13px; font-style: italic; color: var(--muted); margin-bottom: 6px">Наименование</div>
+<div style="font-size: 22px; line-height: 1.2">Исследование</div>
+</div>
+<div style="grid-column: span 2; background: var(--paper); padding: 10px 14px 16px">
+<div style="font-size: 13px; font-style: italic; color: var(--muted); margin-bottom: 6px">Написать</div>
+<a href="#" data-email class="u" style="font-size: clamp(20px, 2vw, 26px); line-height: 1.15; font-style: italic; overflow-wrap: anywhere">email</a>
+</div>
+<div style="background: var(--paper); padding: 10px 14px 16px">
+<div style="font-size: 13px; font-style: italic; color: var(--muted); margin-bottom: 6px">Разраб.</div>
+<div style="font-size: 19px">Потёмкин К.&#160;А.</div>
+</div>
+<div style="background: var(--paper); padding: 10px 14px 16px">
+<div style="font-size: 13px; font-style: italic; color: var(--muted); margin-bottom: 6px">Лист</div>
+<div style="font-size: 19px">Приложение к&#160;листу 2</div>
+</div>
+<div style="background: var(--paper); padding: 10px 14px 16px">
+<div style="font-size: 13px; font-style: italic; color: var(--muted); margin-bottom: 6px">Изм.</div>
+<div style="font-size: 19px">Г</div>
+</div>
+<div style="background: var(--paper); padding: 10px 14px 16px">
+<div style="font-size: 13px; font-style: italic; color: var(--muted); margin-bottom: 6px">Дата</div>
+<div class="num" style="font-size: 19px">02.11.2026</div>
+</div>
+<div class="w3" style="background: var(--paper); padding: 10px 14px 16px">
+<div style="font-size: 13px; font-style: italic; color: var(--muted); margin-bottom: 6px">Также</div>
+<div style="display: flex; flex-wrap: wrap; gap: 0 24px; font-size: 19px">
+<a href="https://www.linkedin.com/in/kirakicka" class="u">LinkedIn</a>
+<a href="https://github.com/KiraKicka" class="u">GitHub</a>
+</div>
+</div>
+<div style="background: var(--paper); padding: 10px 14px 16px">
+<div style="font-size: 13px; font-style: italic; color: var(--muted); margin-bottom: 6px">Назад</div>
+<a href="work.html" class="u" style="font-size: 19px">Работа</a>
+</div>
+</div>
+</footer>
+
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

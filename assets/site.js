@@ -80,8 +80,10 @@
       cap.textContent = slides[i].getAttribute('data-cap');
       coord.textContent = slides[i].getAttribute('data-coord');
     }
+    var playTxt = toggle.getAttribute('data-play') || 'Play';
+    var pauseTxt = toggle.getAttribute('data-pause') || 'Pause';
     function paint() {
-      toggle.textContent = paused ? 'Play' : 'Pause';
+      toggle.textContent = paused ? playTxt : pauseTxt;
       live.setAttribute('aria-live', paused ? 'polite' : 'off');
     }
     fig.querySelector('[data-c="prev"]').addEventListener('click', function () { show(i - 1); });
