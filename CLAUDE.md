@@ -1,19 +1,20 @@
 # CLAUDE.md — Kirill Potemkin's personal site
 
-Read this before touching anything. Talk to me (Kirill) in Russian; everything on the site is written in English.
+Read this before touching anything. Talk to me (Kirill) in Russian. The site is in English, with a Russian version under `/ru/` (rules in `RUSSIAN.md`).
 
 ## What this is
 
-A personal website styled as a set of engineering drawing sheets. It's a static site served by GitHub Pages from the root of `main`, with no build step and no dependencies. This repo is the source of truth. The design was first made on a Claude Design canvas, revision D (02.11.2026).
+A personal website styled as a set of engineering drawing sheets. It's a static site with no dependencies. GitHub Pages publishes it through a small Actions workflow whose only job is to add the licensed fonts (see Deploy). This repo is the source of truth. The design was first made on a Claude Design canvas, revision D (02.11.2026).
 
 | Sheet | File | Notes |
 |---|---|---|
-| 1 Index | `index.html` | Cover sheet. Giant name; a blue "A." slides in slowly on load, after the name rises (pure CSS, no JS). Clocks for Lecco and the visitor's time (the visitor's is hidden if they are in Europe/Rome). Day/Night buttons. Language row (EN active; IT and RU "coming"). |
+| 1 Index | `index.html` | Cover sheet. Giant name; a blue "A." slides in slowly on load, after the name rises (pure CSS, no JS). Clocks for Lecco and the visitor's time (the visitor's is hidden if they are in Europe/Rome). Day/Night buttons. Language row (EN active, Russian links to `/ru/`, Italian "coming"). |
 | 2 Work | `work.html` | Revisions D→A (newest first) with blue revision triangles. Then Placements, Writing and Schooling, each marked with a detail-callout circle (P/W/S over 2). |
 | — Research | `research.html` | MiLi PhD research. Off-nav; linked from Work rev. B and from Index "Before". |
 | 3 Bio | `bio.html` | Photo carousel, story, datum points A–G (coordinates under the symbol), languages. |
 | 4 Notes | `notes.html` | Notes and odd jobs. |
-| — | `404.html` | Uses root-absolute paths (`/assets/...`). |
+| — | `404.html` | Uses root-absolute paths (`/assets/...`). English only. |
+| RU | `ru/*.html` | The same five sheets in Russian, set in TT Marxiana Antiqua. Copies of the EN sheets; see `RUSSIAN.md`. |
 
 `assets/site.js` handles all behaviour: theme, email, clocks and the carousel. Each page keeps its CSS in a `<style>` block in `<head>`; layout styles are mostly inline.
 
@@ -21,7 +22,7 @@ A personal website styled as a set of engineering drawing sheets. It's a static 
 
 - **Never write the email address in plain text** in HTML, JS strings or anywhere else in the repo. Use `<a href="#" data-email>email</a>`; `site.js` assembles the address from parts at load.
 - Do not publish a phone number, a CV/PDF, or SATELLARIO anywhere.
-- Site copy is English, sentence case. Michelangelus has **no Cyrillic**, so a Russian version needs a second font first.
+- Site copy is sentence case. Michelangelus has **no Cyrillic**, so the Russian sheets use TT Marxiana Antiqua instead.
 - For anything in Russian (`/ru/`), read `RUSSIAN.md` first and follow it.
 - Photos: strip all metadata (GPS!), max 900 px on the long side, JPEG q≈80. They are shown greyscale via CSS (`.ph img{filter:grayscale(1)}`), so keep the files themselves in colour.
 - Keep `CNAME` (GitHub creates it when the custom domain is set) and `.nojekyll`.
@@ -34,7 +35,7 @@ A personal website styled as a set of engineering drawing sheets. It's a static 
 - No ALL CAPS, no letter-spaced eyebrows, no middle-dot meta strings, no "→" decorations.
 - Page headings are giant lowercase words: `work`, `bio`, `notes`. Size `clamp(64px, 13vw, 200px)`, line-height .88, letter-spacing −0.045em.
 
-**Colour tokens.** They are repeated in every page's `<style>` and in `404.html`, so change all six files together:
+**Colour tokens.** They are repeated in every page's `<style>` and in `404.html`, so change all eleven files together (five EN sheets, `404.html`, five `ru/` sheets):
 
 | token | day | night |
 |---|---|---|
@@ -71,7 +72,7 @@ A personal website styled as a set of engineering drawing sheets. It's a static 
    - no horizontal scroll (`scrollWidth === innerWidth`);
    - tap targets ≥ 24 px; text contrast ≥ 4.5:1;
    - heading order h1 → h2 → h3; visible keyboard focus;
-   - the font actually loads (`document.fonts.check('16px Michelangelus')`).
+   - the font actually loads (`document.fonts.check('16px Michelangelus')`; on `/ru/` check `"TT Marxiana Antiqua"`).
 4. Look at the screenshots yourself before saying it's done. When switching themes, wait for the layout to settle before capturing.
 5. Commit in small steps with clear messages. Ask before pushing.
 
@@ -97,4 +98,4 @@ Enforce HTTPS is on. Every page except `404.html` has an absolute `og:url` and `
 - MiLi CAD render and caption (`research.html`, figure "View A.")
 - Exact mountain for "Above Lecco" in the Bio carousel (both the `data-cap` and the visible caption)
 - PhD dates after the defence (January 2027)
-- Italian and Russian versions; the language row on Index is ready for them
+- Italian version; the language row on Index is ready for it
