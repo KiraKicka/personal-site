@@ -37,7 +37,7 @@ jobs:
       - name: Assemble site
         run: |
           mkdir -p _site
-          rsync -a --exclude '.git*' --exclude '_fonts' --exclude '_site' --exclude 'tools' ./ _site/
+          rsync -a --exclude '.git*' --exclude '_fonts' --exclude '_site' --exclude 'tools' --exclude '*.md' ./ _site/
           mkdir -p _site/assets/fonts  # git keeps no empty dirs, and every font comes from _fonts
           cp _fonts/*.woff2 _site/assets/fonts/
           ls -la _site/assets/fonts
